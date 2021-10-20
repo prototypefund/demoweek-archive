@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAudioSearch</title>
+  <link rel="icon" href="https://archive.demoweek.prototypefund.de/runde9/assets/images/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="https://archive.demoweek.prototypefund.de/runde9/assets/css/main.css">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:image" content="https://archive.demoweek.prototypefund.de/assets/images/project_images/openaudiosearch/header.png">
+  <meta name="twitter:title" content="OpenAudioSearch">
+  <meta name="twitter:description"
+    content="Open Audio Search ist eine Open-Source-Audiosuchmaschine, die gesprochenes Wort in Text umwandelt und diesen anschließend in einem Suchindex speichert.">
+  <meta name="twitter:site" content="@prototypefund">
+  <!-- Open Graph -->
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="OpenAudioSearch">
+  <meta property="og:description"
+    content="Open Audio Search ist eine Open-Source-Audiosuchmaschine, die gesprochenes Wort in Text umwandelt und diesen anschließend in einem Suchindex speichert.">
+  <meta property="og:url" content="https://archive.demoweek.prototypefund.de/projects/17-openaudiosearch.html">
+  <meta property="og:site_name" content="Prototype Fund Demo Week 2021">
+</head>
+
+<body >
+  <header>
+  <div class="header-container">
+    <div class="fix-header">
+      <div class="flex-container justify-between align-center">
+        <a href="https://prototypefund.de/" style="text-decoration: none;" target="_blank" rel="nofollow noreferrer">
+          <div class="logo">
+            <svg width="45" height="64" viewBox="0 0 45 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.5806 3.47559L35.3199 4.17959L42.1081 16.9396L35.3199 27.6609C35.3199 27.6609 27.5726 29.6409 24.6056 30.3449H17.8473V47.6222L23.3169 49.5143L23.182 51.3623L13.4567 51.2302L3.70149 51.3623L3.4917 49.5143L8.9912 47.6222V7.17159L3.50668 5.32359L3.71647 3.47559H29.5806ZM17.8623 26.6636L23.5117 27.7196L32.233 21.7649L34.9303 16.9396L32.233 12.0849L23.5117 6.45292L17.8623 7.18625V26.6636Z" fill="#009ACE"/>
+            </svg>
+            <div class="logo-animation">
+              <div>Demo</div>
+              <div>Week</div>
+            </div>
+          </div>
+        </a>
+
+        <nav>
+  <div class="nav-container hidden-xs">
+    <ul>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#project-section">Projekte</a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-xs-container">
+    <input type="checkbox" class="checkbox" hidden id="click">
+    <label class="nav-hamburger" for="click"><img
+        src="https://archive.demoweek.prototypefund.de/runde9/assets/images/hamburger.svg" /></label>
+    <ul class="navs">
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#project-section">Projekte</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="project-container container">
+  <a href="https://archive.demoweek.prototypefund.de/runde9/" class="home-link">
+    <div class="flex-container justify-start align-center">
+      <p>Zurück zur Startseite</p>
+    </div>
+  </a>
+  <div class="flex-container project justify-between">
+    <div class="project-details">
+      <div class="project-authors">
+        
+        <a >
+          Sid Moreira da Silva, 
+        </a>
+        
+        <a >
+          Franz Heinzmann, 
+        </a>
+        
+        <a >
+          Joseline Veit, 
+        </a>
+        
+        <a >
+          Henning Schumann
+        </a>
+        
+      </div>
+      <h2 class="project-title">OpenAudioSearch</h2>
+      <p class="project-brief">
+        Wir machen Speech2Text für viele Nutzer*innen verfügbar.
+      </p>
+      
+      <p class="project-description">
+        Open Audio Search ist eine Open-Source-Audiosuchmaschine, die gesprochenes Wort in Text umwandelt und diesen anschließend in einem Suchindex speichert.
+      </p>
+      
+    </div>
+    <div class="project-image">
+      
+      <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/project_images/openaudiosearch/header.png" loading="lazy" />
+      
+    </div>
+  </div>
+  <div class="project-body">
+    <h1 id="open-audio-search">Open Audio Search</h1>
+
+<p><img src="https://raw.githubusercontent.com/openaudiosearch/resources/main/prototype-demo/logo.svg" alt="Open Audio Search logo" /></p>
+
+<p>Open Audio Search ist eine intelligente Suchmaschine für Audiodateien. Über automatische Spracherkennung wird gesprochene Sprache in Text umgewandelt, der dann in einer Volltextsuchmaschine indiziert wird. Die Engine kann RSS-Feeds abonnieren, um Inhalt von verschiedenen Quellen zu importieren. Über eine webbasierte Oberfläche können Nutzer*innen die generierten Transkripte von Radiosendungen und Podcasts durchsuchen und direkt von der Zeitmarke der Suchergebnisse abspielen.</p>
+
+<p>Open Audio Search wird als kollaboratives <a href="https://github.com/openaudiosearch/openaudiosearch">Open-Source-Projekt</a> entwickelt und kann leicht auf einem beliebigen Server installiert werden.</p>
+
+<h2 id="motivation-und-hintergrund">Motivation und Hintergrund</h2>
+
+<p>Wir haben einen Hintergrund in Community-Media-Netzwerken. Es gibt bereits kommerzielle Lösungen zur Spracherkennung, aber diese sind für freie Radios und andere nichtkommerzielle Medienprojekte nicht gut verfügbar: Ein minutenbasiertes Preismodell für die Sprachtranskription ist schlicht nicht finanzierbar oder zumindest sehr unattraktiv. Zwar sind Open-Source-Tools sowohl zur Spracherkennung als auch zur Volltextsuche vorhanden, aber diese sind bislang schwer aufzusetzen und nicht integriert - was einen großen händischen Aufwand bedeutet, um zu nutzbaren Ergebnissen zu kommen.</p>
+
+<p>Gleichzeitig gibt es mehrere große Bestände an interessanten und relevanten Audio-Dateien wie Radio-Features und Podcasts, die unter freien Lizenzen veröffentlicht sind. Ein gutes Beispiel ist unser Partner in diesem Projekt, das <a href="https://cba.fro.at">“community broadcasting archive”</a> oder auch <a href="https://freie-radios.net">freie-radios.net</a>. Auf diesen Plattformen sind viele großartige Hörstücke archiviert, aber die einzelnen Beiträge und Features sind oft nur schwer wieder aufzufinden. Insbesondere für ehrenamtlich getragene Projekte bleibt oft wenig Zeit, um Beschreibungstexte, Metadaten oder gar Transkripte einzupflegen, nachdem die eigentliche Produktion abgeschlossen ist – umso mehr für Inhalte, die vor zwanzig Jahren produziert wurden und nun im Rahmen von Digitalisierungsprojekten online gestellt werden.</p>
+
+<p>Mit Open Audio Search wollen wir diese Herausforderungen angehen und dazu beitragen, eine zukunftssichere und gut wartbare Open-Source-Plattform für <em>community media discovery</em> herzustellen. Über ein modulares Backend wollen wir Experimente mit neuen Technologien und intelligenten Algorithmen ermöglichen, um <em>Community-Media</em>-Produktionen ins Rampenlicht zu bringen. Wir hoffen, dass wir so Community-Media-Produzent*innen mit mehr Reichweite und einem breiteren Publikum versorgen können – denn wenn Inhalte nach ihrer Produktion Teil eines lebendigen und leicht durchforstbaren Archivs werden, dann gehen sie auch nicht so schnell wieder verloren, wie es derzeit oft der Fall ist.</p>
+
+<h2 id="stand-der-dinge">Stand der Dinge</h2>
+
+<p>Mit der Förderung durch den Prototype Fund haben wir die letzten 6 Monate damit verbracht viele Ideen zu jonglieren, Backend, Frontend und Spracherkennungspipeline zu implementieren und ein Setup aufzubauen, um Open Audio Search als Open-Source-Projekt auch in Zukunft weiterentwickeln zu können.</p>
+
+<p>Heute können wir nun unsere erste öffentliche Demo präsentieren:</p>
+
+<h3 id="demoopenaudiosearchorg"><a href="https://demo.openaudiosearch.org">demo.openaudiosearch.org</a></h3>
+
+<p><img src="https://github.com/openaudiosearch/resources/raw/main/prototype-demo/intro.gif" alt="Screencast Open Audio Search demo" /></p>
+
+<p>Diese Demo-Seite indiziert derzeit einigen aktuellen Inhalt von <a href="https://cba.fro.at">cba</a> und <a href="https://freie-radios.net">freie-radios.net</a>. Bitte beachtet: Das ist ein Alpha-Release und es ist mit Bugs und fehlenden Features zu rechnen. Wir freuen uns, wenn du uns Probleme und Ideen mitteilst - am einfachsten über unseren <a href="https://github.com/openaudiosearch/openaudiosearch/issues/new/choose">Issue-Tracker auf GitHub</a>!</p>
+
+<h3 id="features">Features</h3>
+
+<p>Open Audio Search steht beim ersten Preview-Release, ein größeres Beta-Release folgt bald. Mit heutigem Stand sind die folgenden Features implementiert und nutzbar:</p>
+
+<ul>
+  <li>RSS-Feeds können von beliebigen Quellen importiert und in eine lokale Datenbank gespeichert werden</li>
+  <li>Alle in den RSS-Feeds verlinkten Audiodateien können automatisch über unsere Speech-To-Text-Pipeline transkribiert werden</li>
+  <li>Die Zuordnung von Metadaten-Feldern in den RSS-Feeds kann angepasst werden</li>
+  <li>Umfassende Volltext-Suche ist in sowohl den Metadaten als auch den automatisch erstellten Transkripten verfügbar</li>
+  <li>Ein responsives, webbasiertes User Interface, über das alle importierten Medien abgespielt und alle indizierten Daten durchsucht und gefiltert werden können</li>
+  <li>Wenn die Suche Ergebnisse aus einem Transkript findet, dann kann der zugehörige Audiotrack direkt von der Zeitmarke des Suchergebnisses im Transkript abgespielt werden</li>
+  <li>Eine (bislang minimalistische) Admin-UI, um die eingebundenen RSS-Feeds zu verwalten</li>
+  <li>Eine HTTP-API mit Authentifizierung, über die Anbindungen an Drittsysteme entwickelt werden können</li>
+</ul>
+
+<h2 id="zukunftspläne">Zukunftspläne</h2>
+
+<p>Wir haben im Moment ein funktionierendes Setup, das in unserer <a href="https://demo.openaudiosearch.org">Demo</a> ausprobiert werden kann. Darüber hinaus haben wir schon einige konkrete Ideen, was in der näheren Zukunft passieren soll:</p>
+
+<ul>
+  <li>Mit unseren Partner*innen von <a href="https://cba.fro.at">cba</a> und <a href="https://freie-radios.net">freie-radios.net</a> wollen wir in den nächsten Monaten eine Open Audio Search Produktivinstanz für deutschsprachige Community Media in Betrieb nehmen.</li>
+  <li>In einem Schwesterprojekt, gefördert durch <a href="https://www.netidee.at/">netidee</a>, setzen wir unsere eigene Trainings- und Evaluationspipeline auf, um die Spracherkennung zu verbessern. Außerdem wollen wir durch Natural Language Processing und das Matchen mit einer Wissensdatenbank wie <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a> bessere und bedeutsamere Suchergebnisse erzielen.</li>
+  <li>Nächstes Jahr wollen wir ein Replikationssystem zwischen Open Audio Search Instanzen implementieren. Das ist der nächste Schritt in Richtung eines europäischen Inhalts-Netzwerks für Community Media. Mit Unterstützung der <a href="https://culturalfoundation.eu/">European Cultural Foundation</a> und Partner*innen in Irland und Spanien wollen wir in absehbarer Zukunft eine erste Pilotversion dieses <a href="https://ecb-preview.arso.xyz/"><em>european cultural backbone</em></a> starten.</li>
+</ul>
+
+<p>Wir laden alle, die Interesse daran haben, Community Media besser durchsuchbar und auffindbar zu machen, herzlich dazu ein, mit uns in Kontakt zu treten! Was technische Details betrifft, öffnet gerne Issues in unserem <a href="https://github.com/openaudiosearch/openaudiosearch">GitHub repo</a>. Für andere Kommentare, Ideen oder potentielle Zusammenarbeit besucht bitte unseren <a href="https://discord.openaudiosearch.org">Discord Chat Server</a> oder <a href="mailto:info@arso.xyz">schickt uns eine Email</a>.</p>
+
+<h2 id="technische-architektur">Technische Architektur</h2>
+
+<p>Open Audio Search ist komplett Open Source. Wir bauen auf verschiedenen Tools und Bibliotheken auf und unsere eigene Codebase besteht derzeit aus drei Hauptkomponenten in drei verschiedenen Programmiersprachen: Dem Backend (in Rust), dem Worker für Spracherkennung und Analysen (in Python) sowie dem Web-Frontend (in JavaScript). In unserem Repository befindet sich eine ausführliche <a href="https://github.com/openaudiosearch/openaudiosearch/blob/main/docs/architecture.md">Dokumentation der technischen Architektur</a>, die wir fortlaufend ausbauen und verbessern werden.</p>
+
+<h2 id="erfahrungen-während-der-förderung-im-prototype-fund">Erfahrungen während der Förderung im Prototype Fund</h2>
+
+<p>In den sechs Monaten des Prototype Funds haben wir diese erste Version von Open Audio Search von Grund auf entworfen und implementiert.</p>
+
+<p>Wir haben mit einem in Python geschriebenen Proof-of-Concept-Backend angefangen. Das hat gut funktioniert, aber uns wurde im Prozess klar, dass Python nicht unsere Programmiersprache der Wahl ist für eine stabiles, auf langfristige Weiterentwicklung und gute Wartbarkeit ausgerichtetes Backend. Daher haben wir ungefähr zur Hälfte der Förderlaufzeit beschlossen, das Backend in <a href="https://www.rust-lang.org/">Rust</a> zu schreiben. Rust ist eine recht neue Programmiersprache, die über ihre strenge Typisierung und diverse weitere Features viel dazu beitragen kann, zuverlässige und effiziente Software zu bauen. Die Umstellung des Backends auf Rust erwies sich als Herausforderung und lohnende Aufgabe zugleich: Die anfängliche Implementierung hat eine Weile gedauert, erwies sich aber schon in der Anfangsphase als sehr zuverlässig und erlaubt es uns, zu iterieren und <em>refactoring</em> zu betreiben, ohne dass wir uns große Sorgen machen müssen.</p>
+
+<p>Recht frühzeitig haben wir uns für den derzeitigen Stack an Datendiensten entschieden, die in Open Audio Search verwendet werden: <a href="https://couchdb.org">CouchDB</a> als unser primärer Datenspeicher und <a href="https://www.elastic.co/">Elasticsearch</a> für den Suchindex.</p>
+
+<p>Parallel haben wir ein webbasierte Frontend entwickelt: Fließendes Hin und Her zwischen Mockups und Entwürfen und der Implementierung als <em>single page application</em> mit <a href="https://reactjs.org">React</a>. Im Vordergrund stand dabei eine flott funktionierende Suchseite.</p>
+
+<p>Von Anfang an haben wir versucht, ein reibungsloses Packaging zu bieten. Wir haben ein Setup zur <em>continuous integration</em>, das nach jedem Commit ein neues <a href="https://www.docker.com/">Docker</a>-Container-Abbild erzeugt. Damit können wir Produktivinstanzen wie die aktuelle Demo-Seite laufend auf den neuesten Entwicklungsstand aktualisieren und andere Nutzer*innen können ebenfalls schnell und unkompliziert ein Instanz aufsetzen.</p>
+
+<p>Zwei zunächst angedachte Features mussten in die nähere Zukunft geschoben werden: Durch Natural Language Processing (NLP) wollen wir Schlüsselwörter und Tags aus den Transkripten extrahieren, die wir dann für eine bessere Suche und Kategorisierung einsetzen möchten. Wir haben zwar ein minimales proof-of-concept-Setup für NLP und Named Entity Recognition (NER) in der derzeitigen Codebase – für eine wirklich hilfreiche automatisierte Verschlagwortung braucht es aber noch mehr Tuning und Entwicklung.</p>
+
+<p>Wir wollen außerdem eine Möglichkeit herstellen, um die Datenbanken von verschiedenen Instanzen von Open Audio Search über ein <em>peer-to-peer</em>-Netzwerk zu synchronisieren. Wir haben dazu bereits einige Ansätze, diese sind aber noch nicht in der Hauptlinie der Codebase integriert. Mit dem in CouchDB integrierten <a href="https://docs.couchdb.org/en/main/replication/intro.html"><em>replication feature</em></a> haben wir dafür eine solide Grundlage.</p>
+
+<p>Bevor wir in einigen Monaten in Production gehen sind noch ein paar Features zu entwickeln: Wir brauchen eine bessere Fehlerberichterstattung, eine zuverlässigere Auftragswarteschlange und eine bessere Vorverarbeitung, um Musik und Geräusche in den Audiofiles von Sprache zu trennen.</p>
+
+<p>Bei einem Open-Source-Projekt geht es nicht nur ums Programmieren. Für eine lebendige Zukunft braucht es Dokumentation und Offenheit für weitere Entwickler*innen. Hier haben wir in den letzten sechs Monaten viel nachgeholt. Wir haben jetzt READMEs und <em>issue templates</em> in unserem <a href="https://github.com/openaudiosearch/openaudiosearch">GitHub-Repository</a> und einen öffentlichen <a href="https://discord.openaudiosearch.org">Chat auf Discord</a>. Außerdem konnten wir unser internes Projektmanagement deutlich verbessern. Der Workshop mit <a href="https://zero360.de/en/">zero360</a>, den wir im Rahmen des Prototype Funds durchführen konnten, hat uns hier sehr weitergeholfen. Wir haben damit angefangen, öfters virtuelle Whiteboards zur Projektplanung zu benutzen und haben erfolgreich effektivere Abläufe in unseren wöchentlichen Treffen eingeführt.</p>
+
+<p>Wir bedanken uns beim BMBF und dem DLR für die Förderung von Open Audio Search.</p>
+
+  </div>
+</div>
+  <footer>
+  <div class="flex-container separator-container justify-between align-center">
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="flex-container justify-between footer-details">
+      <div class="footer-desc">
+        <p>
+          Der Prototype Fund ist ein Projekt der <b>Open Knowledge Foundation Deutschland</b> e. V.,
+          das vom <b>Bundesministerium für Bildung und Forschung</b> (BMBF) gefördert wird.
+        </p>
+        <div class="flex-container justify-start align-center">
+          <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/footer_logo.svg" loading="lazy"
+            alt="Bundesministerium fur Bildung und Forschung logo" />
+          <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/logo-okfn.png" loading="lazy"
+            alt="OKFN 10th anniversary logo" />
+        </div>
+      </div>
+      <div>
+        <p>DEMO WEEK ARCHIV</p>
+        <a class="footer-archive" href="https://archive.demoweek.prototypefund.de" target="_blank" rel="noopener"
+          title="Access archives">Archiv der letzten Runden</a>
+      </div>
+      <div class="social-container">
+        <p>join the conversation<br /><b>#prototypefund</b></p>
+        <div class="social-links">
+          <p>follow us:</p>
+          <div class="flex-container justify-end">
+            <a href="https://twitter.com/prototypefund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde9/assets/images/social_icons/twitter.png" loading="lazy"
+                alt="Twitter" /></a>
+            <a href="https://mastodon.social/@PrototypeFund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde9/assets/images/social_icons/mastodon.png" loading="lazy"
+                alt="Mastodon" /></a>
+          </div>
+        </div>
+        <div class="links-container">
+          <a class="link" href="https://prototypefund.de/code-of-conduct/" target="_blank"
+            rel="nofollow noreferrer">Code of Conduct</a>
+          <a class="link" href="https://prototypefund.de/impressum/" target="_blank" rel="nofollow noreferrer">Impressum
+            / Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

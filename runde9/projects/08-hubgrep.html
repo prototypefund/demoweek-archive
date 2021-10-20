@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubGrep</title>
+  <link rel="icon" href="https://archive.demoweek.prototypefund.de/runde9/assets/images/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="https://archive.demoweek.prototypefund.de/runde9/assets/css/main.css">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:image" content="https://archive.demoweek.prototypefund.de/assets/images/project_images/hubgrep/9y5NRb5.png">
+  <meta name="twitter:title" content="HubGrep">
+  <meta name="twitter:description"
+    content="HubGrep erstellt einen Index verschiedener Hosting Services, um eine Suchmaschine zur Verfügung zu stellen.">
+  <meta name="twitter:site" content="@prototypefund">
+  <!-- Open Graph -->
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="HubGrep">
+  <meta property="og:description"
+    content="HubGrep erstellt einen Index verschiedener Hosting Services, um eine Suchmaschine zur Verfügung zu stellen.">
+  <meta property="og:url" content="https://archive.demoweek.prototypefund.de/projects/08-hubgrep.html">
+  <meta property="og:site_name" content="Prototype Fund Demo Week 2021">
+</head>
+
+<body >
+  <header>
+  <div class="header-container">
+    <div class="fix-header">
+      <div class="flex-container justify-between align-center">
+        <a href="https://prototypefund.de/" style="text-decoration: none;" target="_blank" rel="nofollow noreferrer">
+          <div class="logo">
+            <svg width="45" height="64" viewBox="0 0 45 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.5806 3.47559L35.3199 4.17959L42.1081 16.9396L35.3199 27.6609C35.3199 27.6609 27.5726 29.6409 24.6056 30.3449H17.8473V47.6222L23.3169 49.5143L23.182 51.3623L13.4567 51.2302L3.70149 51.3623L3.4917 49.5143L8.9912 47.6222V7.17159L3.50668 5.32359L3.71647 3.47559H29.5806ZM17.8623 26.6636L23.5117 27.7196L32.233 21.7649L34.9303 16.9396L32.233 12.0849L23.5117 6.45292L17.8623 7.18625V26.6636Z" fill="#009ACE"/>
+            </svg>
+            <div class="logo-animation">
+              <div>Demo</div>
+              <div>Week</div>
+            </div>
+          </div>
+        </a>
+
+        <nav>
+  <div class="nav-container hidden-xs">
+    <ul>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#project-section">Projekte</a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-xs-container">
+    <input type="checkbox" class="checkbox" hidden id="click">
+    <label class="nav-hamburger" for="click"><img
+        src="https://archive.demoweek.prototypefund.de/runde9/assets/images/hamburger.svg" /></label>
+    <ul class="navs">
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#project-section">Projekte</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="project-container container">
+  <a href="https://archive.demoweek.prototypefund.de/runde9/" class="home-link">
+    <div class="flex-container justify-start align-center">
+      <p>Zurück zur Startseite</p>
+    </div>
+  </a>
+  <div class="flex-container project justify-between">
+    <div class="project-details">
+      <div class="project-authors">
+        
+        <a >
+          Jan Hartmann, 
+        </a>
+        
+        <a >
+          Henrik Eliasson
+        </a>
+        
+      </div>
+      <h2 class="project-title">HubGrep</h2>
+      <p class="project-brief">
+        Wir sind eine Suchmaschine für Open Source Code.
+      </p>
+      
+      <p class="project-description">
+        HubGrep erstellt einen Index verschiedener Hosting Services, um eine Suchmaschine zur Verfügung zu stellen.
+      </p>
+      
+    </div>
+    <div class="project-image">
+      
+      <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/project_images/hubgrep/9y5NRb5.png" loading="lazy" />
+      
+    </div>
+  </div>
+  <div class="project-body">
+    <h1 id="hubgrep-im-prototype-fund">HubGrep im Prototype Fund</h1>
+
+<h2 id="open-source-projekte-finden">Open-Source-Projekte finden</h2>
+
+<p>Sucht man etwas in der Open-Source-Welt, bekommt man schnell den Eindruck, dass alle Wege zu GitHub führen - eine Plattform, die Microsoft gehört.</p>
+
+<p>Als Softwareentwickler*:in benutzt du wahrscheinlich die default Suchmaschine deines Browsers, um nach Software und Libraries zu suchen und hoffst, dass etwas passendes möglichst weit oben in den Suchergebnissen ist - und wenn nicht, scrollst du durch nicht-so-ganz passende Stackoverflow-Posts (oder merkwürdige Kopien davon) und Links zu alten Posts in alten Foren.</p>
+
+<p>Vermeiden könntest du das, indem du direkt auf einer Code-Hosting-Platform suchst, aber du weißt schon vorher, dass du dort nichts findest, das woanders gehostet wird - und es gibt nicht nur die großen Sourcecode-Hoster sondern auch eine unüberschaubare Zahl Hoster für einzelne Projekte und kleine Communities.</p>
+
+<p>Ein weiteres Problem einiger Hoster ist die Intransparenz bei der Suche: Nach welchen Kriterien werden die Ergebnisse sortiert und in den Suchergebnissen gelistet? Für die Plattformen, die selbst keine Open-Source-Software sind, ist nicht klar, ob die Ergebnisse auf irgendeine Art “maßgeschneidert” sind oder ob jemand bezahlt hat, um in den Ergebnissen weiter oben zu sein. Idealerweise solltest du die Ergebnisse bekommen, nach denen du fragst - ohne dass externe Interessen einfließen.</p>
+
+<p>Es gibt also einiges zu verbessern.</p>
+
+<h2 id="wir-stellen-vor-hubgrep">Wir stellen vor: HubGrep!</h2>
+
+<video src="/assets/images/project_images/hubgrep/hubgrep_intro.mp4" autoplay="" controls="" muted="" loop=""></video>
+
+<p>Mit <a href="https://hubgrep.io/">HubGrep</a> bauen wir eine Suchmaschine, die ihren Fokus auf Open-Source-Projekte legt und die Ergebnisse verschiedener Hoster kombiniert - ohne dass die Größe oder Bekanntheit des Hosters Einfluss auf das Ranking hat.</p>
+
+<p>Natürlich kennen wir nicht “alle” Code-Hosting-Plattformen. Aber solltest du eine vermissen, <a href="https://hubgrep.io/add_instance/step_1">kannst du sie selbst hinzufügen</a> und im nächsten Update des Suchindex ist sie dann enthalten.</p>
+
+<p>Zusätzlich zu deinem Suchbegriff kannst du deine Ergebnisse über verschiedene Filter weiter einschränken. Vielleicht ist es wichtig für dich, wann ein Projekt das letzte Update bekommen hat oder in welcher Sprache es geschrieben wurde? Wir wollen dir die Ergebnisse geben, nach denen du fragst und nicht die, die deinem “Profil” entsprechen: Das einzige, was wir (eventuell irgendwann) speichern, ist ein Settings Cookie, um deine Filtereinstellungen zu behalten.</p>
+
+<h2 id="ein-klick-weniger-im-workflow">Ein Klick weniger im Workflow</h2>
+
+<p>Erst zu einer anderen Website gehen zu müssen, anstatt die Standard-Suchmaschine zu nutzen, ist ein Schritt, den viele ungern zusätzlich gehen - und Routinen sind nicht einfach zu ändern. (Und wir Entwickler*innen sind schließlich von Berufswegen her faul.)</p>
+
+<p>Zum Glück haben die meisten Browser eine Funktion, neue Suchmaschinen mit einem bestimmten Keyword zu verknüpfen.</p>
+
+<video src="/assets/images/project_images/hubgrep/keyword_search.mp4" autoplay="" controls="" muted="" loop=""></video>
+
+<p>Zum Beispiel kannst du im Browser ein Keyword <code class="language-plaintext highlighter-rouge">h</code> mit der Url <code class="language-plaintext highlighter-rouge">https://hubgrep.io/</code> verknüpfen. Wenn du dann <code class="language-plaintext highlighter-rouge">h software dingsbums</code> aufrufst, wirst du direkt zu deinen Suchergebnissen auf hubgrep.io gebracht. Den Schritt, erst auf die Website zu gehen, sparst du also.</p>
+
+<p>Da das jede*r für sich selbst einrichten muss und es für alle Browser unterschiedlich funktioniert, kannst du für einige gänginge Browser in unserer <a href="https://docs.hubgrep.io/en/latest/docs/hubgrep_search/usage/add_to_browser.html">Dokumentation</a> nachlesen, wie das genau geht.</p>
+
+<h2 id="der-weg-zum-prototyp">Der Weg zum Prototyp</h2>
+
+<p>Vielleicht interessiert dich, wie wir HubGrep gebaut haben. Unser erster Ansatz war relativ einfach und naiv: Wir haben eine Website mit einem Suchfeld gebaut, die Suchanfragen an Services, die wir kennen, weiterleitet. Wird eine Suche abgeschickt, sammeln wir alle Ergebnisse, ordnen jedem Resultat einen bestimmten Score zu und stellen die sortierte Liste als Suchergebnis dar.</p>
+
+<p>Auf diese Art hatten wir relativ schnell einen ersten Prototyp, und es hat sich sofort wie ein sinnvolles Projekt angefühlt. Aber nur einen “Proxy”-Service zu haben hat einige Nachteile:</p>
+
+<ul>
+  <li>Die Suchergebnisse können erst dargestellt werden, wenn der langsamste Hoster geantwortet hat, und je mehr Hoster man hinzufügt, desto unzuverlässiger und langsamer wird alles.</li>
+  <li>Man muss den Hostern immer noch vertrauen, die “guten” Suchergebnisse zuerst zu liefern, da man jeweils nur “die erste Seite” der Suchergebnisse angezeigt bekommt (oder wahlweise noch länger warten muss).</li>
+  <li>Die Hoster brauchen eine Suchfunktion in ihrer API.</li>
+  <li>Die Ergebnisse müssen immer noch gewichtet und sortiert werden, obwohl die individuellen Ergebnisse der Services schon sortiert sind.</li>
+</ul>
+
+<p>Wenn du ausprobieren möchtest, wie sich so eine Suchmaschine anfühlt, kannst du das <a href="https://meta.hubgrep.io/">hier</a> tun.</p>
+
+<p>Um von den besagten Problemen weg zu kommen, war unser nächster logischer Schritt, einen eigenen Suchindex aufzubauen. Wir haben <a href="https://github.com/HubGrep/hubgrep_crawlers">Crawler</a> geschrieben, die zu jedem Projekt auf den Hosting Services Metadaten sammeln. Diese wiederum schicken die Daten an einen <a href="https://github.com/HubGrep/hubgrep_indexer">Indexer</a>, der sie speichert, so weit vereinheitlicht, dass sie vergleichbar sind, und in eine Form bringt, aus der wir später den Suchindex erstellen können. Bisher unterstützen der Indexer und die Crawler Projekte von GitHub, GitLab und Gitea.</p>
+
+<p>Es gibt natürlich <a href="https://en.wikipedia.org/wiki/Forge_(software)">noch viel mehr Hosting -Plattformen</a>, aber zuverlässige Crawler zu schreiben ist recht aufwändig - vielleicht hilft ja irgendwann die ein oder andere Nutzer*in.</p>
+
+<p>Ein schöner Nebeneffekt dieser Sammlerei: Wir stellen auch die <a href="https://indexer.hubgrep.io/">unverarbeiteten Rohdaten</a> zum Download zur Verfügung! Wenn du eine schöne Idee für ein Projekt hast, Datenvisualisierungen machen, oder einfach ein bisschen “drin rumstochern” möchtest: feel free!</p>
+
+<p>Der in HubGrep verwendete Suchindex basiert auf den vereinheitlichten Daten; die Datengrundlage jedes Hosters ist in unserer <a href="https://hubgrep.io/hosters">Exportübersicht entsprechend verlinkt</a>.</p>
+
+<h2 id="wo-es-hingehen-könnte">Wo es hingehen könnte</h2>
+
+<p>Wir haben nun eine funktionierende Suchmaschine - aber vielleicht ist das erst der Anfang.</p>
+
+<p>Da wir gerade erst angefangen haben, unser eigenes Such-Backend zu nutzen, liegt unsere Priorität auf dem Verbessern der Gewichtung und dem Sortieren der Ergebnisse.
+Eine andere naheliegende Erweiterung wäre, mehr Hosting-Services zu durchsuchen - beispielsweise Bitbucket.</p>
+
+<p>Einige APIs stellen mehr Informationen bereit als andere, deshalb kennen wir beispielsweise die Lizenz oder Programmiersprache nicht von allen Projekten. Die Aufgabe, alle Projekte zu klonen, zu analysieren, und um die fehlenden Metadaten zu erweitern wäre eine ressourcen- und zeitintensive Aufgabe, aber wir haben eine Datenbasis, auf der wir aufbauen könnten. Mit den geklonten Projekten hätten wir dann, über die API Metadaten hinaus, auch alle Commit IDs und könnten über alle Hoster hinweg Forks und Mirrors von Projekten erkennen, und in den Ergebnissen gruppieren.</p>
+
+<p>Alles in allem sind wir an einem guten Ausgangspunkt, HubGrep größeren Mehrwert zu geben, als “nur” Daten aus APIs zu indexen, und “nur” eine Suchmaschine zu sein.
+Es könnte eine Landkarte der Open Source Welt sein.</p>
+
+<p>Wir danken dem DLR, dem BMBF und dem Prototype Fund für das Vertrauen und die Unterstützung während der letzten sechs Monate!</p>
+
+  </div>
+</div>
+  <footer>
+  <div class="flex-container separator-container justify-between align-center">
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="flex-container justify-between footer-details">
+      <div class="footer-desc">
+        <p>
+          Der Prototype Fund ist ein Projekt der <b>Open Knowledge Foundation Deutschland</b> e. V.,
+          das vom <b>Bundesministerium für Bildung und Forschung</b> (BMBF) gefördert wird.
+        </p>
+        <div class="flex-container justify-start align-center">
+          <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/footer_logo.svg" loading="lazy"
+            alt="Bundesministerium fur Bildung und Forschung logo" />
+          <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/logo-okfn.png" loading="lazy"
+            alt="OKFN 10th anniversary logo" />
+        </div>
+      </div>
+      <div>
+        <p>DEMO WEEK ARCHIV</p>
+        <a class="footer-archive" href="https://archive.demoweek.prototypefund.de" target="_blank" rel="noopener"
+          title="Access archives">Archiv der letzten Runden</a>
+      </div>
+      <div class="social-container">
+        <p>join the conversation<br /><b>#prototypefund</b></p>
+        <div class="social-links">
+          <p>follow us:</p>
+          <div class="flex-container justify-end">
+            <a href="https://twitter.com/prototypefund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde9/assets/images/social_icons/twitter.png" loading="lazy"
+                alt="Twitter" /></a>
+            <a href="https://mastodon.social/@PrototypeFund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde9/assets/images/social_icons/mastodon.png" loading="lazy"
+                alt="Mastodon" /></a>
+          </div>
+        </div>
+        <div class="links-container">
+          <a class="link" href="https://prototypefund.de/code-of-conduct/" target="_blank"
+            rel="nofollow noreferrer">Code of Conduct</a>
+          <a class="link" href="https://prototypefund.de/impressum/" target="_blank" rel="nofollow noreferrer">Impressum
+            / Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

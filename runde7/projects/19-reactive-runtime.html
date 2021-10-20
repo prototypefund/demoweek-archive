@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reactive Runtime</title>
+  <link rel="icon" href="https://archive.demoweek.prototypefund.de/runde7/assets/images/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="https://archive.demoweek.prototypefund.de/runde7/assets/css/main.css">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:image" content="https://archive.demoweek.prototypefund.de/assets/images/project_images/ReactiveRuntime/header.png">
+  <meta name="twitter:title" content="Reactive Runtime">
+  <meta name="twitter:description"
+    content="ReactiveRuntime ermöglicht die effiziente, automatische Ausführung von numerischen Notebooks. So wird es Wissenschaftler*innen erleichtert, ihre Modelle interaktiv erlebbar zu veröffentlichen.">
+  <meta name="twitter:site" content="@prototypefund">
+  <!-- Open Graph -->
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Reactive Runtime">
+  <meta property="og:description"
+    content="ReactiveRuntime ermöglicht die effiziente, automatische Ausführung von numerischen Notebooks. So wird es Wissenschaftler*innen erleichtert, ihre Modelle interaktiv erlebbar zu veröffentlichen.">
+  <meta property="og:url" content="https://archive.demoweek.prototypefund.de/projects/19-reactive-runtime.html">
+  <meta property="og:site_name" content="Prototype Fund Demo Week 2020">
+</head>
+
+<body >
+  <header>
+  <div class="header-container">
+    <div class="fix-header">
+      <div class="flex-container justify-between align-center">
+        <a href="https://prototypefund.de/" style="text-decoration: none;" target="_blank" rel="nofollow noreferrer">
+          <div class="logo">
+            <svg width="45" height="64" viewBox="0 0 45 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M29.5806 3.47559L35.3199 4.17959L42.1081 16.9396L35.3199 27.6609C35.3199 27.6609 27.5726 29.6409 24.6056 30.3449H17.8473V47.6222L23.3169 49.5143L23.182 51.3623L13.4567 51.2302L3.70149 51.3623L3.4917 49.5143L8.9912 47.6222V7.17159L3.50668 5.32359L3.71647 3.47559H29.5806ZM17.8623 26.6636L23.5117 27.7196L32.233 21.7649L34.9303 16.9396L32.233 12.0849L23.5117 6.45292L17.8623 7.18625V26.6636Z"
+                fill="#009ACE" />
+            </svg>
+            <div class="logo-animation">
+              <div>Demo</div>
+              <div>Week</div>
+            </div>
+          </div>
+        </a>
+
+        <nav>
+  <div class="nav-container hidden-xs">
+    <ul>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#project-section">Projekte</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#keynote2">Abschluss</a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-xs-container">
+    <input type="checkbox" class="checkbox" hidden id="click">
+    <label class="nav-hamburger" for="click"><img
+        src="https://archive.demoweek.prototypefund.de/runde7/assets/images/hamburger.png" /></label>
+    <ul class="navs">
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#project-section">Projekte</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#keynote2">Abschluss</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="project-container container">
+  <a href="https://archive.demoweek.prototypefund.de/runde7/" class="home-link">
+    <div class="flex-container justify-start align-center">
+      <img src="https://archive.demoweek.prototypefund.de/runde7/assets/images/back.png" />
+      <p>Zurück zur Startseite</p>
+    </div>
+  </a>
+  <div class="flex-container project justify-between">
+    <div class="project-details">
+      <div class="project-authors">
+        
+        <a >
+          Simon Danisch
+        </a>
+        
+      </div>
+      <h2 class="project-title">Reactive Runtime</h2>
+      <p class="project-brief">
+        Wir machen wissenschaftliche Forschungsergebnisse reproduzierbar und transparent.
+      </p>
+      
+      <p class="project-description">
+        ReactiveRuntime ermöglicht die effiziente, automatische Ausführung von numerischen Notebooks. So wird es Wissenschaftler*innen erleichtert, ihre Modelle interaktiv erlebbar zu veröffentlichen.
+      </p>
+      
+    </div>
+    <div class="project-image">
+      
+      <img src="https://archive.demoweek.prototypefund.de/runde7/assets/images/project_images/ReactiveRuntime/header.png" />
+      
+    </div>
+  </div>
+  <div class="project-body">
+    <h2 id="projektbeschreibung-und-ziel">Projektbeschreibung und Ziel</h2>
+
+<p>Veröffentlichungen und Reproduzierbarkeit ist ein Grundstein der wissenschaftlichen Methodik. Zur Bereitstellung von Daten, Analysen und Code erfreuen sich <a href="https://jupyter.org/">Jupyter Notebooks</a> steigender Beliebtheit.
+Notebooks sind interaktive Dokumente, in denen man Code entwickeln kann und die Resultate als multi-media output angezeigt bekommt:</p>
+
+<p><img src="/assets/images/project_images/ReactiveRuntime/example-notebook.png" alt="Ein klassisches Jupyter Notebook für eine Datenanalyse" /><br />
+<small>Ein klassisches Jupyter Notebook für eine Datenanalyse</small></p>
+
+<p>Die Veröffentlichung dieser Notebooks und die Interaktivität der generierten Graphiken gestaltet sich jedoch als Anspruchsvoll.</p>
+
+<p>Abhängigkeit der Ausführungsordnung (execution order) und versteckter Zustände (hidden state) verhindern häufig die Reproduktion. Außerdem wird der graphische output oft als statische Bilder exportiert, mit welchen man nicht effizient interagieren kann.</p>
+
+<p>Bei diesem Projekt, wird die Kalkulation ähnlich wie bei Spreadsheets (z. B. Excel) durch einen Graphen dargestellt, der die Abhängigkeiten zwischen den benutzten Variablen beschreibt.</p>
+
+<p>Dies ermöglicht die effiziente, automatische Ausführung des gesamten Notebooks, z. B. wenn sich Inputs verändern. Zusammen mit interaktiven Widgets wie Slidern, kann man so spielerisch komplexe Daten und wissenschaftliche Modelle erforschen.</p>
+
+<p>Eine Hauptinnovation dieses Projekts ist es, dass man durch das Erfassen des gesamten Compute-Graphs alle Berechnungen speichern kann - das heißt, egal ob die Berechnungen auf einem Supercomputer gelaufen sind, oder auf einem Laptop mit einem Komplizierten Setup, ist es möglich die Resultate interaktiv im Internet einem breiten Publikum vorzustellen.
+Wissenschaftlern wird es so ermöglicht Ihre Forschungen besser zu erklären und macht es dadurch einfacher die Bevölkerung und Politiker zu erreichen. Somit kann ein größerer Teil der Bevölkerung wichtige Zusammenhänge verstehen, was ultimativ dazu führt, als Gesellschaft besser wissenschaftlich fundierte Entscheidungen treffen zu können. Dies ist besonders wichtig in Forschungsgebieten die uns alle betreffen, wie zum Beispiel die Klima-Krise.</p>
+
+<p>Die Programmiersprache der Wahl ist <a href="https://julialang.org/">Julia</a>, welche eine neue, performante und einfach zu benutzende Programmiersprache ist – also vergleichbar mit Python, aber mit <a href="https://julialang.org/benchmarks/">der Geschwindigkeit von C++</a>. Dies macht Julia die Sprache der Wahl für moderne <a href="https://www.hpcwire.com/off-the-wire/julia-joins-petaflop-club/">große Simulationen und Daten Analysen</a> und auch für <a href="https://github.com/CliMA">groß angelegte Klima Modellierungen</a>.
+Das Projekt setzt auf die von mir geschriebene Plotting Bibliothek <a href="https://github.com/JuliaPlots/Makie.jl/">Makie.jl</a> auf, welche von Grund auf für interaktive Anwendungen konzipiert worden ist.
+Mein Vortrag von der <a href="https://juliacon.org/2020/">JuliaCon 2020</a> gibt eine Übersicht über die Fähigkeiten:</p>
+
+<p><a href="https://youtu.be/ACqBmDlhTBU"><img src="/assets/images/project_images/ReactiveRuntime/89909417-5486ab80-dbef-11ea-9a31-2f2a0b7596e6.png" alt="image" />
+</a></p>
+
+<p>Was bis jetzt fehlte, war ein performantes Web backend und die Möglichkeit die interaktiven Plots ohne einen laufenden Julia Server zu veröffentlichen.
+Makie hat schon von Anfang an <a href="https://github.com/JuliaGizmos/Observables.jl/">Observables.jl</a> benutzt, um einen Compute-Graph aller Berechnungen zu erstellen. Dies erleichtert es für dieses Projekt einen performanten offline Modus zu erstellen, da man alle nötigen Abhängigkeiten, Inputs und Outputs kennt, und so nur die Daten Speichern muss, die wirklich notwendig sind um online mit der Graphik zu interagieren. So ist es nun möglich, ein mit Makie visualisiertes interaktives Julia Programm auf jeglicher Plattform online zu stellen!</p>
+
+<h1 id="ergebnisse">Ergebnisse</h1>
+
+<p>Die vollständige Notebookintegration der ReactiveRuntime ist ein wenig in den Hintergrund geraten, da ungleich später das Projekt <a href="https://github.com/fonsp/Pluto.jl">Pluto.jl</a> gestartet worden ist, welches zu 100 % die Reactive Runtime implementiert, die Ursprünglich von diesem Projekt beschrieben worden ist und welche dem gleichen Ausführungsmodell wie <a href="https://observablehq.com/">ObservablHQ</a> folgt:</p>
+
+<p><img src="/assets/images/project_images/ReactiveRuntime/80617037-e2c09280-8a41-11ea-9fb3-18bb2921dd9e.gif" alt="pluto.gif" /><br />
+<small>Pluto.jl in Aktion: interaktive Grafiken sind sehr einfach zu programmieren</small></p>
+
+<p>Dies hat den Fokus auf Geschwindigkeit und den statischen Export interaktiver Plots von komplexen Modellen verschoben, was Pluto bis jetzt noch nicht unterstützt.</p>
+
+<p>Nichtsdestotrotz, funktionieren alle Elemente von ReactiveRuntime in Jupyter, IJulia, Nextjournal, VSCode und sogar auch in Pluto.jl.</p>
+
+<p>Nextjournal funktioniert besonders gut, da ReactiveRuntime hier automatisch jegliche Plots offline, interaktiv und reproduzierbar exportiert so, dass es sehr leicht ist diese einem breiten Publikum vorzustellen. Wenn man möchte, kann man sogar jegliche Artikel <a href="https://nextjournal.com/help/how-to-remix">remixen</a> um weiterführende Analysen zu erstellen, und so aufeinander aufbauende Wissenschaft zu betreiben.</p>
+
+<p>Ein <a href="https://nextjournal.com/sdanisch/mimi-dice2013-climate-impact">Demo Artikel</a>, der alle Daten und jegliche Software installiert hat, zeigt interaktive Visualisierungen die zusammen mit den wissenschaftlichen Partnern dieses Projekts entwickelt worden sind. Außerdem, habe ich auch einige demos mit Beschreibung auf github.io gestellt:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><a href="https://nextjournal.com/sdanisch/mimi-dice2013-climate-impact">MIMI Climate impact</a></th>
+      <th><a href="https://simondanisch.github.io/WGLDemos/soil/">Bodenfeuchte &amp; Temperatur von homogenen Grasland</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://nextjournal.com/sdanisch/mimi-dice2013-climate-impact"><img src="/assets/images/project_images/ReactiveRuntime/90456562-90db6f80-e0f9-11ea-85b7-9b80f1a1ecf2.gif" alt="mimis" /></a></td>
+      <td><a href="https://simondanisch.github.io/WGLDemos/soil/"><img src="/assets/images/project_images/ReactiveRuntime/90456794-2414a500-e0fa-11ea-9bec-70204d8e5b70.gif" alt="soil" /></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://simondanisch.github.io/WGLDemos/german_heat">Temperatur &amp; Niederschlag in Deutschland</a></td>
+      <td><a href="https://simondanisch.github.io/WGLDemos/oceananigans/">Ozean Simulation</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://simondanisch.github.io/WGLDemos/german_heat"><img src="/assets/images/project_images/ReactiveRuntime/90456595-a94b8a00-e0f9-11ea-929c-b6013f2e22a5.gif" alt="german_heat" /></a></td>
+      <td><a href="https://simondanisch.github.io/WGLDemos/oceananigans/"><img src="/assets/images/project_images/ReactiveRuntime/90456718-f29bd980-e0f9-11ea-9375-700e8c123288.gif" alt="ocean" /></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="technische-details">Technische Details</h1>
+
+<p>Wie schon erwähnt ist die Basis für ReactiveRuntime die Plotting Bibliothek <a href="https://github.com/JuliaPlots/Makie.jl">Makie.jl</a>. Dieses Projekt hat das high Performance Web backend (<a href="https://github.com/JuliaPlots/WGLMakie.jl">WGLMakie</a>) weiter ausgebaut und optimiert. WGLMakie benutzt <a href="https://github.com/SimonDanisch/JSServe.jl">JSServe.jl</a> um interaktive Grafiken von Julia aus mit <a href="https://threejs.org/">ThreeJS</a> &amp; <a href="https://de.wikipedia.org/wiki/WebGL">WebGL</a> im Browser zu rendern.
+JSServe ist eine Bibliothek um in Julia interaktive HTML + Javascript Anwendungen zu bauen, welche nun auch ohne einen laufenden Julia Server präsentiert werden können. JSServe ist auch außerhalb von Makie nutzbar, was die Anwendung der neuen Funktionen noch relevanter macht. Einen kurzen Überblick über JSServe habe ich zur JuliaCon 2020 vorgetragen:</p>
+
+<p><a href="https://youtu.be/3XBlosGT7rI"><img src="/assets/images/project_images/ReactiveRuntime/89909956-ebebfe80-dbef-11ea-8120-b4c34ac49396.png" alt="image" /></a></p>
+
+<p>Da JSServe auch Observables.jl benutzt, funktioniert es perfekt mit Makie und dessen Compute-Graph zusammen.
+Zum Beispiel, in einem interaktiven Plot, bei dem nur die Farbe + marker Größe bei einer Interaktion verändert wird, macht Observables es möglich nur diese zum Browser zu schicken, was nur wenigen Bytes entspricht.
+Dies hilft auch sehr bei dem offline Modus, da durch das Fehlen des Julia Prozesses alle Daten im Voraus berechnet werden müssen. In ReactiveRuntime haben wir vollständiges Wissen, welche Daten <em>wirklich</em> gespeichert werden müssen, um eine interaktive Graphik zu erstellen. Wenn auf dem Weg zur Graphik Gigabytes an Daten verarbeitet werden müssen, aber am Ende nur ein paar Positionen und Farben verändert werden, speichert ReactiveRuntime nur diese!
+So ist die Statemap für folgende Visualisierung nur ~0.1MB groß (klick für interaktiven Demo):</p>
+
+<p><a href="https://simondanisch.github.io/WGLDemos/simple/"><img src="/assets/images/project_images/ReactiveRuntime/89910707-de834400-dbf0-11ea-9199-c5d4b606158b.gif" alt="simple" /></a></p>
+
+<p>Die Statemap kann für jegliche JSServe Applikationen generiert werden. Es werden automatisch alle Input Elemente wie Slider in der Julia App gefunden und die Kommunikation mit dem Julia Prozess wird durch einen lookup in Javascript ersetzt. Dies funktioniert natürlich nur für <a href="https://en.wikipedia.org/wiki/Pure_function">pure Funktionen</a> und Input Elemente mit einer finiten Anzahl an states, wie Slider und Dropdowns. Die Input Elemente werden durch ein Trait System definiert, also jeder Benutzer kann eigene Inputs definieren, indem man folgende Funktionen überlädt:</p>
+
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">is_widget</span><span class="x">(</span><span class="o">::</span><span class="n">MyWidget</span><span class="x">)</span> <span class="o">=</span> <span class="nb">true</span>
+<span class="k">function</span><span class="nf"> value_range</span><span class="x">(</span><span class="n">x</span><span class="o">::</span><span class="n">MyWidget</span><span class="x">)</span>
+<span class="k">return</span> <span class="n">any_iterable_over_possible_states</span>
+<span class="k">end</span>
+<span class="k">function</span><span class="nf"> update_value!</span><span class="x">(</span><span class="n">x</span><span class="o">::</span><span class="n">MyWidget</span><span class="x">,</span> <span class="n">value</span><span class="x">)</span>
+<span class="c"># logic to update observable</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Ein Beispiel dafür, wie man diese Funktionen überläd und Benutzer definierte Widgets erstellt, findet sich in der <a href="https://github.com/SimonDanisch/JSServe.jl/blob/master/examples/oceananigans.jl">Ozean Simulations Demo</a>.</p>
+
+<h1 id="zukunft">Zukunft</h1>
+
+<p>Makie ist schon sehr erfolgreich innerhalb der kleinen aber stark wachsenden Julia Community. Wenn man sich in dem <a href="https://slackinvite.julialang.org/">Julia-Slack</a> anmeldet, kann man in dem inzwischen 348 starken Channel Hilfe bekommen und Fragen zu Makie stellen!
+Der neue interaktive Modus, den man auf statische Webseiten und in den meisten Notebook Plattformen einbetten kann, macht Makie noch um einiges relevanter, da dies die Publikation komplexer Analysen um einiges vereinfacht.
+Makie und JSServe werden auch von einigen Firmen verwendet, was dem Wachstum in Zukunft deutlich helfen wird.
+Es wird auch an einer Julia Kompilation zu JavaScript und <a href="https://de.wikipedia.org/wiki/WebAssembly">WebAssembly</a> gearbeitet <a href="https://github.com/Keno/julia-wasm">¹</a> <a href="https://github.com/MikeInnes/Charlotte.jl">²</a>, so, dass es in Zukunft vorstellbar ist, dass noch komplexere Interaktionen im Browser zur Verfügung gestellt werden können!
+Wir arbeiten auch weiterhin aktiv an einer besseren Integration mit Pluto.jl und anderen Notebook Plattformen, um überall schnelle und publizierbare, interaktive Grafiken verfügbar zu machen.
+Man kann dem Fortschritt des Projektes auch in Zukunft unter <a href="https://twitter.com/MakiePlots">@MakiePlots</a> verfolgen!</p>
+
+<p>Alles deutet daraufhin, dass Makie, JSServe &amp; ReactiveRuntime weiterhin wachsen und viel in der Forschung verwendet werden.
+Dies ist schlussendlich auch dem Prototype Fund zu verdanken, der dieses Projekt gefördert hat, welcher durch den <a href="https://www.bmbf.de/">BMBF</a> finanziert wird und durch den Projektträger <a href="https://www.dlr.de/DE/Home/home_node.html">DLR</a> ausgetragen wurde.</p>
+
+  </div>
+</div>
+  <footer>
+  <div class="flex-container separator-container justify-between align-center">
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="flex-container justify-between footer-details">
+      <div class="footer-desc">
+        <p>
+          Der Prototype Fund ist ein Projekt der Open Knowledge Foundation Deutschland e. V.,
+          das vom Bundesministerium für Bildung und Forschung (BMBF) gefördert wird.
+        </p>
+        <div class="flex-container justify-start align-center">
+          <img src="https://archive.demoweek.prototypefund.de/runde7/assets/images/footer_logo.svg" />
+          <img src="https://archive.demoweek.prototypefund.de/runde7/assets/images/logo-okfn.png" style="margin-left: 5rem;" />
+        </div>
+      </div>
+      <div class="social-container">
+        <p>join the conversation<br />#prototypefund</p>
+        <div class="social-links">
+          <p>follow us:</p>
+          <div class="flex-container justify-end">
+            <a href="https://twitter.com/prototypefund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde7/assets/images/social_icons/twitter.png" /></a>
+            <a href="https://mastodon.social/@PrototypeFund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde7/assets/images/social_icons/mastodon.png" /></a>
+          </div>
+        </div>
+        <div class="links-container">
+          <a class="link" href="https://prototypefund.de/code-of-conduct/" target="_blank"
+            rel="nofollow noreferrer">Code of Conduct</a>
+          <a class="link" href="https://prototypefund.de/impressum/" target="_blank" rel="nofollow noreferrer">Impressum
+            / Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

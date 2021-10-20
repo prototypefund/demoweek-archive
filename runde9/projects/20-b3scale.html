@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b3scale</title>
+  <link rel="icon" href="https://archive.demoweek.prototypefund.de/runde9/assets/images/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="https://archive.demoweek.prototypefund.de/runde9/assets/css/main.css">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:image" content="https://archive.demoweek.prototypefund.de/assets/images/project_images/b3scale/header.png">
+  <meta name="twitter:title" content="b3scale">
+  <meta name="twitter:description"
+    content="Durch b3scale können mehrere BigBlueButton-Frontends an einem großen Cluster betrieben werden. Die Middleware-Architektur ermöglicht eine flexible Lastverteilung und Feature-Erweiterungen.">
+  <meta name="twitter:site" content="@prototypefund">
+  <!-- Open Graph -->
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="b3scale">
+  <meta property="og:description"
+    content="Durch b3scale können mehrere BigBlueButton-Frontends an einem großen Cluster betrieben werden. Die Middleware-Architektur ermöglicht eine flexible Lastverteilung und Feature-Erweiterungen.">
+  <meta property="og:url" content="https://archive.demoweek.prototypefund.de/projects/20-b3scale.html">
+  <meta property="og:site_name" content="Prototype Fund Demo Week 2021">
+</head>
+
+<body >
+  <header>
+  <div class="header-container">
+    <div class="fix-header">
+      <div class="flex-container justify-between align-center">
+        <a href="https://prototypefund.de/" style="text-decoration: none;" target="_blank" rel="nofollow noreferrer">
+          <div class="logo">
+            <svg width="45" height="64" viewBox="0 0 45 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.5806 3.47559L35.3199 4.17959L42.1081 16.9396L35.3199 27.6609C35.3199 27.6609 27.5726 29.6409 24.6056 30.3449H17.8473V47.6222L23.3169 49.5143L23.182 51.3623L13.4567 51.2302L3.70149 51.3623L3.4917 49.5143L8.9912 47.6222V7.17159L3.50668 5.32359L3.71647 3.47559H29.5806ZM17.8623 26.6636L23.5117 27.7196L32.233 21.7649L34.9303 16.9396L32.233 12.0849L23.5117 6.45292L17.8623 7.18625V26.6636Z" fill="#009ACE"/>
+            </svg>
+            <div class="logo-animation">
+              <div>Demo</div>
+              <div>Week</div>
+            </div>
+          </div>
+        </a>
+
+        <nav>
+  <div class="nav-container hidden-xs">
+    <ul>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#project-section">Projekte</a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-xs-container">
+    <input type="checkbox" class="checkbox" hidden id="click">
+    <label class="nav-hamburger" for="click"><img
+        src="https://archive.demoweek.prototypefund.de/runde9/assets/images/hamburger.svg" /></label>
+    <ul class="navs">
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#project-section">Projekte</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="project-container container">
+  <a href="https://archive.demoweek.prototypefund.de/runde9/" class="home-link">
+    <div class="flex-container justify-start align-center">
+      <p>Zurück zur Startseite</p>
+    </div>
+  </a>
+  <div class="flex-container project justify-between">
+    <div class="project-details">
+      <div class="project-authors">
+        
+        <a >
+          Annika Hannig
+        </a>
+        
+      </div>
+      <h2 class="project-title">b3scale</h2>
+      <p class="project-brief">
+        Wir verbessern den Betrieb von BigBlueButton-Clustern
+      </p>
+      
+      <p class="project-description">
+        Durch b3scale können mehrere BigBlueButton-Frontends an einem großen Cluster betrieben werden. Die Middleware-Architektur ermöglicht eine flexible Lastverteilung und Feature-Erweiterungen.
+      </p>
+      
+    </div>
+    <div class="project-image">
+      
+      <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/project_images/b3scale/header.png" loading="lazy" />
+      
+    </div>
+  </div>
+  <div class="project-body">
+    <h2 id="motivation">Motivation</h2>
+
+<p>Seit Beginn der COVID-19-Pandemie ist der Bedarf an Lösungen für den digitalen Remote-Unterricht kontinuierlich gestiegen. BigBlueButton hat sich dabei als gute, nicht proprietäre und datenschutzfreundliche Lösung im Einsatz an Bildungs-und Schuleinrichtungen etabliert.</p>
+
+<p>Eine besondere Herausforderung ist dabei ein effizienter Betrieb, um wirtschaftlich konkurrenzfähig zu sein und somit eine attraktive Alternative zu bestehenden, nicht freien Angeboten zu bieten.</p>
+
+<h2 id="anforderungen">Anforderungen</h2>
+
+<p>Die bisher am weitesten verbreitete Skalierungslösung Scalelite ermöglichte zwar einen Betrieb von BigBlueButton-Clustern zur Lastverteilung, allerdings musste für jede Einrichtung ein separates Cluster zur Verfügung gestellt werden. Dies führte dazu, dass viele Instanzen weitestgehend ungenutzt blieben.</p>
+
+<p>Für eine effiziente Auslastung mussten alle Einrichtungen das gleiche Cluster ohne gegenseitige Interferenz nutzen können. Grundsätzlich sollte dabei allerdings die Kompatibilität mit Scalelite erhalten bleiben.</p>
+
+<p>Weiter sollten für unterschiedliche Integrationen individuell einstellbare Optionen, wie die hinterlegte Standard-Präsentation, ermöglicht werden.</p>
+
+<p>Eine weitere Anforderung war die Verteilung von Meetings anhand von Kriterien die für jedes Frontend einstellbar sein mussten, um beispielsweise dedizierte Bereiche zeitweise zu reservieren.</p>
+
+<p>B3scale selbst muss ebenfalls einen Cluster-Betrieb ermöglichen, um Ausfallsicherheit zu gewährleisten.</p>
+
+<p>Die Konfiguration soll mittels einer API erfolgen, um eine Automatisation des Betriebs zu ermöglichen.</p>
+
+<h2 id="architektur">Architektur</h2>
+
+<p>Um die Anforderung der Ausfallsicherheit zu gewährleisten, war es notwendig, den Zustand in eine Datenbank auszulagern und nicht in der Anwendung selbst zu halten. Dies umfasste sowohl die Routing-Tabelle als auch die Konfiguration von BigBlueButton-Backend-Instanzen und Frontends. Die relationale Datenbank PostgreSQL wurde hier ausgewählt, weil diese bereits lange Zeit produktiv in vielen Projekten im Einsatz ist und ebenfalls Cluster-fähig ist.</p>
+
+<p><img src="/assets/images/project_images/b3scale/arch1.png" alt="Abb.1 Cluster-Architektur mit BBB-Backends, PostgreSQL-, b3scale-Cluster und Nginx LoadBalancer." /></p>
+
+<h3 id="anfrageverarbeitung">Anfrageverarbeitung</h3>
+
+<p>Die Anwendungsarchitektur von b3scale entspricht grundlegend der eines klassischen Proxy-LoadBalancers: HTTP-Anfragen werden entgegengenommen und dekodiert. Für das Routing wichtige Attribute wie die “MeetingID” oder die API-Ressource werden dabei strukturiert. Mit dieser Anfrage wird nun das Gateway aufgerufen und der Ablauf einer Middleware-Kette angestoßen.</p>
+
+<p>In einzelnen Middlewares wird die Anfrage aufbereitet und nach Bedarf verändert. So kann beispielsweise die Standardpräsentation bei Erzeugung eines Raumes angepasst werden.</p>
+
+<p>Am Ende der Kette sitzt eine Handler-Middleware, welche die BigBlueButton-API implementiert. In den meisten Fällen bedeutet das, ein Backend auszuwählen und die Anfrage dorthin weiterzuleiten. Anfragen, die aus dem Zustand der Applikation direkt erzeugbar sind, werden beantwortet, ohne das BigBlueButton-Backend hinzuzuziehen. Dazu gehört unter anderem die Auflistung der derzeit laufenden Meetings im Cluster.</p>
+
+<p>Die Antwort der Handler-Middleware durchläuft die Kette in umgekehrter Richtung und kann ebenfalls modifiziert werden.</p>
+
+<p><img src="/assets/images/project_images/b3scale/b3scale_middlewares.png" alt="Abb.2 b3scale Applikations-Architektur, Gateway- und Router-Middlewares" /></p>
+
+<p>Muss zur Beantwortung einer Anfrage auf ein BigBlueButton-Backend zugegriffen werden, so muss dies zunächst durch den Router ausgewählt werden. Die Anfrage wird dabei, analog zum Gateway, durch eine Middleware-Kette geleitet und BigBlueButton-Backends anhand von Kriterien selektiert oder verworfen. Hier wird ebenfalls die Sortierung der Backends nach Last und die Partitionierung des Clusters mittels Tags durchgeführt.</p>
+
+<h3 id="middleware-konfiguration">Middleware-Konfiguration</h3>
+
+<p>Einzelne Middleware-Module, wie beispielsweise das zum Einstellen der Standard-Präsentation bei Raum-Erzeugung, erfordern Konfiguration zur Laufzeit des Clusters. B3scale stellt allen Middlewares eine Schnittstelle zur Speicherung und Abfrage von Einstellungen zur Verfügung. Diese Schnittstelle wird ebenfalls über die HTTP-API angeboten.</p>
+
+<h3 id="api">API</h3>
+
+<p>Änderungen des Applikationszustandes werden durch eine RESTful-API, die über das HTTP-Interface zur Verfügung gestellt wird, ermöglicht. Die Authentifikation erfolgt mittels JsonWebToken. Als Austauschformat wird JSON verwendet.</p>
+
+<p>Die <code class="language-plaintext highlighter-rouge">b3scalecli</code> Terminal-Anwendung nutzt diese, um Backends und Frontends zu verwalten.</p>
+
+<p>Durch die API kann die Verwaltung des BigBlueButton-Clusters in Automatisierungs- und Verwaltungslösungen integriert werden.</p>
+
+<h3 id="nebenläufige-datenverarbeitung">Nebenläufige Datenverarbeitung</h3>
+
+<p>Periodische Aufgaben, wie das Abgleichen der Raum-Listen mit den Backends oder deren Prüfung auf Erreichbarkeit, werden im Hintergrund durchgeführt.</p>
+
+<p>Durch die Anforderung des Cluster-Betriebs von b3scale, müssen diese Aufgaben auf die einzelnen Instanzen verteilt werden. Dazu wurde eine Job-Queue als Teil des gemeinsamen Zustandes implementiert. Alle Instanzen verarbeiten diese, allerdings kann jede Aufgabe nur durch jeweils eine Instanz gleichzeitig selektiert werden. Ausgenutzt wird dabei der Row-Level-Locking-Mechanismus der Postres-Datenbank. Die Aufgaben werden dadurch auf die einzelnen b3scale-Instanzen aufgeteilt.</p>
+
+<p>Um eine größtmögliche Stabilität bei der Verarbeitung der Aufgaben zu erreichen, wird die Job-Queue periodisch abgefragt.</p>
+
+<h3 id="reaktive-ereignisverarbeitung">Reaktive Ereignisverarbeitung</h3>
+
+<p>Um den Zustand des BigBlueButton-Backends mit dem von b3scale synchron zu halten, werden periodisch Meeting-Informationen von Backends abgefragt. Eine hohe Frequenz hätte dabei eine große Serverlast zur Folge. Mit einer niedrigen würde im Laufe der Zeit die interne Zustandsrepräsentation - und damit lastverteilungs-relevante Werte, wie die Anzahl der Teilnehmer*innen - ihre Genauigkeit verlieren.</p>
+
+<p>Für das Erreichen einer möglichst exakten Abbildung des Backend-Zustandes im Cluster wird durch b3scale auf interne Ereignisse (Events) von BigBlueButton zurückgegriffen: Ein auf dem Backend-Server installierter Dienst (<code class="language-plaintext highlighter-rouge">b3scalenoded</code>) abonniert die von BigBlueButton produzierten Ereignisse auf dem lokal laufenden Redis-Cache und aktualisiert den geteilten Zustand des Clusters. Beim Betreten oder Verlassen eines Raums wird so diese Information unverzüglich dem Cluster zugänglich gemacht und kann in Routing-Entscheidungen einfließen.</p>
+
+<h3 id="automatisches-clustermanagement">Automatisches Clustermanagement</h3>
+
+<p>BigBlueButton-Backends können nicht nur manuell oder mittels API zum Cluster hinzugefügt werden: Der für die Ereignisverarbeitung zuständige Dienst kann so eingestellt werden, dass neue Backends automatisch am Cluster registriert werden. Dies erleichtert die Inbetriebnahme weiterer Instanzen.</p>
+
+<h3 id="protokollierung">Protokollierung</h3>
+
+<p>Erfassung von Fehlern in Protokollen im Betrieb ist ebenfalls ein wichtiger Bestandteil von b3scale.</p>
+
+<p>Detailgrad und Ebene des Protokolls können eingestellt werden. Für die Ausgabe kann dabei entweder eine klassische, textoriertierte oder eine strukturierte Variante gewählt werden.</p>
+
+<p>Bei der strukturierten Protokollierung erfolgt die Ausgabe der Nachrichten in einem JSON-Format und kann dadurch im operativen Betrieb besser durch eine zentrale Protokollerfassung
+verarbeitet werden.</p>
+
+<h3 id="metriken">Metriken</h3>
+
+<p>Zentral für den Betrieb von Clustern ist die permanente Erfassung der Zustände der einzelnen Systeme. B3scale stellt dazu über HTTP Metriken zur Verfügung, die durch Datenbanken wie Prometheus (oder andere kompatible) erfasst und als Zeitserien aufgearbeitet werden können.</p>
+
+<p>Zu den exportierten Daten gehören sowohl Kennzahlen über die Applikationsinstanz selbst - wie Speicherverbrauch oder Threads - als auch die Anzahl von Meetings und Teilnehmenden im Cluster.</p>
+
+<p><img src="/assets/images/project_images/b3scale/grafana1.png" alt="Abb.3 Grafana Visualisierung der Meeting-Kennzahlen" /></p>
+
+<p><img src="/assets/images/project_images/b3scale/grafana2.png" alt="Abb.3 Grafana Visualisierung der Meeting-Kennzahlen" /></p>
+
+<h2 id="ausblick">Ausblick</h2>
+
+<p>B3scale wird bereits produktiv eingesetzt und stellt für viele Anwendungsfälle eine gute Alternative zu Scalelite dar. Die Middleware-Architektur ermöglicht es, den Feature-Umfang von BigBlueButton zu erweitern und erlaubt eine einsatzspezifische Optimierungen der Backend-Auswahl im Cluster.</p>
+
+<p>Die ursprünglich geplante Reverse-Proxy-Funktionalität, bei der die einzelnen Backend-Instanzen gänzlich hinter b3scale versteckt werden sollten, wurde allerdings aufgrund von Hürden durch die Architektur von BigBlueButton nicht weiter verfolgt.</p>
+
+<p>Generell kann b3scale als Ersatz zu Scalelite verwendet werden. Allerdings fehlt zum aktuellen Zeitpunkt noch eine Unterstützung der in BigBlueButton integrierten Aufnahmefunktion. Diese befindet sich gegenwärtig noch in Entwicklung, wurde aber bisher aufgrund datenschutzrechtlicher Bedenken auch mit niedriger Priorität verfolgt.</p>
+
+<p>Vielen Dank an das BMBF und das DLR für diese tolle Möglichkeit!</p>
+
+  </div>
+</div>
+  <footer>
+  <div class="flex-container separator-container justify-between align-center">
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="flex-container justify-between footer-details">
+      <div class="footer-desc">
+        <p>
+          Der Prototype Fund ist ein Projekt der <b>Open Knowledge Foundation Deutschland</b> e. V.,
+          das vom <b>Bundesministerium für Bildung und Forschung</b> (BMBF) gefördert wird.
+        </p>
+        <div class="flex-container justify-start align-center">
+          <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/footer_logo.svg" loading="lazy"
+            alt="Bundesministerium fur Bildung und Forschung logo" />
+          <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/logo-okfn.png" loading="lazy"
+            alt="OKFN 10th anniversary logo" />
+        </div>
+      </div>
+      <div>
+        <p>DEMO WEEK ARCHIV</p>
+        <a class="footer-archive" href="https://archive.demoweek.prototypefund.de" target="_blank" rel="noopener"
+          title="Access archives">Archiv der letzten Runden</a>
+      </div>
+      <div class="social-container">
+        <p>join the conversation<br /><b>#prototypefund</b></p>
+        <div class="social-links">
+          <p>follow us:</p>
+          <div class="flex-container justify-end">
+            <a href="https://twitter.com/prototypefund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde9/assets/images/social_icons/twitter.png" loading="lazy"
+                alt="Twitter" /></a>
+            <a href="https://mastodon.social/@PrototypeFund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde9/assets/images/social_icons/mastodon.png" loading="lazy"
+                alt="Mastodon" /></a>
+          </div>
+        </div>
+        <div class="links-container">
+          <a class="link" href="https://prototypefund.de/code-of-conduct/" target="_blank"
+            rel="nofollow noreferrer">Code of Conduct</a>
+          <a class="link" href="https://prototypefund.de/impressum/" target="_blank" rel="nofollow noreferrer">Impressum
+            / Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

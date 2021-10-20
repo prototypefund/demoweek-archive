@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quba-Viewer</title>
+  <link rel="icon" href="https://archive.demoweek.prototypefund.de/runde9/assets/images/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="https://archive.demoweek.prototypefund.de/runde9/assets/css/main.css">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:image" content="https://archive.demoweek.prototypefund.de/assets/images/project_images/quba-viewer/header.png">
+  <meta name="twitter:title" content="Quba-Viewer">
+  <meta name="twitter:description"
+    content="Der Quba-Viewer ist eine Anwendung, um strukturierte e-Rechnungen bildhaft darstellen und ausdrucken zu können.">
+  <meta name="twitter:site" content="@prototypefund">
+  <!-- Open Graph -->
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Quba-Viewer">
+  <meta property="og:description"
+    content="Der Quba-Viewer ist eine Anwendung, um strukturierte e-Rechnungen bildhaft darstellen und ausdrucken zu können.">
+  <meta property="og:url" content="https://archive.demoweek.prototypefund.de/projects/28-quba-viewer.html">
+  <meta property="og:site_name" content="Prototype Fund Demo Week 2021">
+</head>
+
+<body >
+  <header>
+  <div class="header-container">
+    <div class="fix-header">
+      <div class="flex-container justify-between align-center">
+        <a href="https://prototypefund.de/" style="text-decoration: none;" target="_blank" rel="nofollow noreferrer">
+          <div class="logo">
+            <svg width="45" height="64" viewBox="0 0 45 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.5806 3.47559L35.3199 4.17959L42.1081 16.9396L35.3199 27.6609C35.3199 27.6609 27.5726 29.6409 24.6056 30.3449H17.8473V47.6222L23.3169 49.5143L23.182 51.3623L13.4567 51.2302L3.70149 51.3623L3.4917 49.5143L8.9912 47.6222V7.17159L3.50668 5.32359L3.71647 3.47559H29.5806ZM17.8623 26.6636L23.5117 27.7196L32.233 21.7649L34.9303 16.9396L32.233 12.0849L23.5117 6.45292L17.8623 7.18625V26.6636Z" fill="#009ACE"/>
+            </svg>
+            <div class="logo-animation">
+              <div>Demo</div>
+              <div>Week</div>
+            </div>
+          </div>
+        </a>
+
+        <nav>
+  <div class="nav-container hidden-xs">
+    <ul>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#project-section">Projekte</a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-xs-container">
+    <input type="checkbox" class="checkbox" hidden id="click">
+    <label class="nav-hamburger" for="click"><img
+        src="https://archive.demoweek.prototypefund.de/runde9/assets/images/hamburger.svg" /></label>
+    <ul class="navs">
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde9/#project-section">Projekte</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="project-container container">
+  <a href="https://archive.demoweek.prototypefund.de/runde9/" class="home-link">
+    <div class="flex-container justify-start align-center">
+      <p>Zurück zur Startseite</p>
+    </div>
+  </a>
+  <div class="flex-container project justify-between">
+    <div class="project-details">
+      <div class="project-authors">
+        
+        <a >
+          Jochen Stärk
+        </a>
+        
+      </div>
+      <h2 class="project-title">Quba-Viewer</h2>
+      <p class="project-brief">
+        Wir vereinfachen die Prüfung von e-Rechnungen.
+      </p>
+      
+      <p class="project-description">
+        Der Quba-Viewer ist eine Anwendung, um strukturierte e-Rechnungen bildhaft darstellen und ausdrucken zu können.
+      </p>
+      
+    </div>
+    <div class="project-image">
+      
+      <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/project_images/quba-viewer/header.png" loading="lazy" />
+      
+    </div>
+  </div>
+  <div class="project-body">
+    <h1 id="elektronische-rechnungen-gewinnen-an-bedeutung">Elektronische Rechnungen gewinnen an Bedeutung</h1>
+
+<p>Sie werden erstens immer wichtiger und zweitens immer strukturierter.</p>
+
+<p>Erstens: Beispielsweise nehmen Behörden seit November 2020 keine Papierrechnungen mehr entgegen, es müssen elektronische Rechnungen sein (<a href="https://www.mustangproject.org/einvoices/?lang=de&amp;pk_campaign=qpr10&amp;pk_source=prototype#European">Details</a>).</p>
+
+<p>Zweitens nimmt die maschinenlesbare Bedeutung innerhalb der Rechnungen zu: Normale PDF-Dateien, die wie andere Dokumente praktisch nur menschenlesbar sind, werden zunehmend durch maschinenlesbare, “strukturierte” XML-Dateien entweder komplett ersetzt oder ergänzt (<a href="https://www.mustangproject.org/zugferd/?lang=de&amp;pk_campaign=qpr10&amp;pk_source=prototype">mehr Info zu hybriden Formaten</a>).</p>
+
+<h2 id="strukturierung">Strukturierung</h2>
+
+<p>Vorteil von XML-Rechnungen sind beispielsweise die Möglichkeit, automatisch nachzurechnen oder ganze Dateien zu bezahlen: Bei der Zahlung entfällt das typische “Copy &amp; Paste” des Betrags, des Fälligkeitsdatums, der Bankverbindung, des/der Empfänger*in und des Verwendungszwecks. Moderne Onlinebankingsoftware wie beispielsweise <a href="https://www.willuhn.de/products/hibiscus/">Hibiscus</a> hat einen Knopf um alle zahlungsrelevanten Daten anzuzeigen und für die Zahlung freizugeben.</p>
+
+<p>Die Phase der bloßen <em>Digitalisierung</em> der Rechnungen wird allmählich abgelöst durch eine Phase der <em>Strukturierung</em> der Daten.</p>
+
+<p>Reine XML-Daten kann aber wiederum kein Mensch prüfen.
+<img src="/assets/images/project_images/quba-viewer/screenshot1.png" alt="XML-Quelltext einer E-Rechnung" title="XML-Quelltext einer E-Rechnung" /></p>
+
+<p>Und leider versteht auch noch nicht jede Buchhaltungssoftware jedes XML-Format. Daher machen hybride Formate Sinn und übergangsweise werden Anzeigeprogramme gebraucht, die aus den maschinenlesbaren XML-Daten wieder menschenlesbare und anzeigbare Rechnungen machen.</p>
+
+<h2 id="quba">Quba</h2>
+
+<p>Unseren E-Rechnungsviewer lädt man sie sich für Windows, Linux oder Mac <a href="http://quba-viewer.org/?pk_campaign=qpr10&amp;pk_source=prototype">herunter</a>: Quba ist komplett offlinefähig, die Rechnungen müssen den heimischen Rechner nie verlassen.
+Nach der Installation kann man UN/CEFACT CII oder UBL-Dateien (beides XML) oder PDF über Datei|Öffnen anzeigen - hat man gerade keine zur Hand, kann man sich <a href="https://quba-viewer.org/beispiele/?pk_campaign=qpr10&amp;pk_source=prototype">Beispiele herunterladen</a>.</p>
+
+<p>Der Ablauf, wie Beispiele heruntergeladen und angezeigt werden können, sieht dann so aus:</p>
+
+<p><img src="/assets/images/project_images/quba-viewer/header.png/Quba.gif" alt="Screenshot von Quba mit einer geöffneten hybriden Rechnung" title="Screenshot von Quba mit einer geöffneten hybriden Rechnung" /></p>
+
+<p>Die Anzeige erfolgt in den Tabs für die allgemeinen Rechnungsdaten, Rechnungsdetails und Positionsdaten.</p>
+
+<p>Enthalten die PDF-Dateien strukturierte Rechnungsinformationen, erscheint neben dem PDF ein Knopf um auf Wunsch zusätzlich das eingebettete XML zu visualisieren.
+<img src="/assets/images/project_images/quba-viewer/screenshot2.png" alt="Screenshot von Quba mit einer geöffneten hybriden Rechnung" title="Screenshot von Quba mit einer geöffneten hybriden Rechnung" /></p>
+
+<h2 id="ausblick">Ausblick</h2>
+
+<p>Danke für die Initialzündung an den <a href="https://prototypefund.de/">Prototype Fund</a>, an das BMBF und das DLR, an Dominique für die Übersetzungen und <a href="https://quba-viewer.org/p/thank-you/?pk_campaign=qpr10&amp;pk_source=prototype">an so viele weitere</a> für das ganze Open-Source Ökosystem.
+Es geht auf jeden Fall weiter. Wie vom <a href="http://mustangproject.org?pk_campaign=qpr10&amp;pk_source=prototype">Schwesterprojekt</a> gewohnt arbeiten wir an einigen Sachen ohnehin unbezahlt, bei einigen weiteren Punkten können wir ansetzen, wenn konkreter Bedarf signalisiert wird. Beispielsweise haben wir an einem Wochenende ein Feature angedeutet, das Rechnungen automatisch nachrechnet. Und obwohl das eigentlich nie nötig sein sollte (Rechnungen werden generell nie „korrigiert“ sondern zurückgewiesen) haben wir für eine konkrete Anfrage kurz angedeutet, dass und wie man Rechnungsattribute in der Benutzeroberfläche ändern und ins XML zurückschreiben könnte.</p>
+
+<p>Unser Beitrag zur Open-Source-E-Rechnungsthematik ist abgesehen von der eigentlichen Elektron-Anwendung der Ansatz, eben auch Factur-X/ZUGFeRD zu unterstützen. Die Visualisierung haben wir ja schon um das erste Attribut (Skonto) aus Factur-X/ZUGFeRD Extended ergänzt - es wird interessant, ob noch weitere Attribute folgen.</p>
+
+<p>Ziemlich sicher ergänzen wir die Visualisierung und unsere Anwendung auch noch um eine englische und französische Übersetzung. Um eine noch zu veröffentlichende Version 1.1 kommen wir also gar nicht umhin.</p>
+
+  </div>
+</div>
+  <footer>
+  <div class="flex-container separator-container justify-between align-center">
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="flex-container justify-between footer-details">
+      <div class="footer-desc">
+        <p>
+          Der Prototype Fund ist ein Projekt der <b>Open Knowledge Foundation Deutschland</b> e. V.,
+          das vom <b>Bundesministerium für Bildung und Forschung</b> (BMBF) gefördert wird.
+        </p>
+        <div class="flex-container justify-start align-center">
+          <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/footer_logo.svg" loading="lazy"
+            alt="Bundesministerium fur Bildung und Forschung logo" />
+          <img src="https://archive.demoweek.prototypefund.de/runde9/assets/images/logo-okfn.png" loading="lazy"
+            alt="OKFN 10th anniversary logo" />
+        </div>
+      </div>
+      <div>
+        <p>DEMO WEEK ARCHIV</p>
+        <a class="footer-archive" href="https://archive.demoweek.prototypefund.de" target="_blank" rel="noopener"
+          title="Access archives">Archiv der letzten Runden</a>
+      </div>
+      <div class="social-container">
+        <p>join the conversation<br /><b>#prototypefund</b></p>
+        <div class="social-links">
+          <p>follow us:</p>
+          <div class="flex-container justify-end">
+            <a href="https://twitter.com/prototypefund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde9/assets/images/social_icons/twitter.png" loading="lazy"
+                alt="Twitter" /></a>
+            <a href="https://mastodon.social/@PrototypeFund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde9/assets/images/social_icons/mastodon.png" loading="lazy"
+                alt="Mastodon" /></a>
+          </div>
+        </div>
+        <div class="links-container">
+          <a class="link" href="https://prototypefund.de/code-of-conduct/" target="_blank"
+            rel="nofollow noreferrer">Code of Conduct</a>
+          <a class="link" href="https://prototypefund.de/impressum/" target="_blank" rel="nofollow noreferrer">Impressum
+            / Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

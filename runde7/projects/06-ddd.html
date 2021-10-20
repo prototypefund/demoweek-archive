@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pd3f: PDF zu Fließtext mit maschinellem Lernen</title>
+  <link rel="icon" href="https://archive.demoweek.prototypefund.de/runde7/assets/images/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="https://archive.demoweek.prototypefund.de/runde7/assets/css/main.css">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:image" content="https://archive.demoweek.prototypefund.de/assets/images/project_images/DDD/header.png">
+  <meta name="twitter:title" content="pd3f: PDF zu Fließtext mit maschinellem Lernen">
+  <meta name="twitter:description"
+    content="Durch lange Wörter im Deutschen sind aus PDF extrahierte Texte mit Zeilenumbrüchen zerstückelt. pd3f rekonstruiert mithilfe von maschinellem Lernen den ursprünglichen Fließtext.">
+  <meta name="twitter:site" content="@prototypefund">
+  <!-- Open Graph -->
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="pd3f: PDF zu Fließtext mit maschinellem Lernen">
+  <meta property="og:description"
+    content="Durch lange Wörter im Deutschen sind aus PDF extrahierte Texte mit Zeilenumbrüchen zerstückelt. pd3f rekonstruiert mithilfe von maschinellem Lernen den ursprünglichen Fließtext.">
+  <meta property="og:url" content="https://archive.demoweek.prototypefund.de/projects/06-ddd.html">
+  <meta property="og:site_name" content="Prototype Fund Demo Week 2020">
+</head>
+
+<body >
+  <header>
+  <div class="header-container">
+    <div class="fix-header">
+      <div class="flex-container justify-between align-center">
+        <a href="https://prototypefund.de/" style="text-decoration: none;" target="_blank" rel="nofollow noreferrer">
+          <div class="logo">
+            <svg width="45" height="64" viewBox="0 0 45 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M29.5806 3.47559L35.3199 4.17959L42.1081 16.9396L35.3199 27.6609C35.3199 27.6609 27.5726 29.6409 24.6056 30.3449H17.8473V47.6222L23.3169 49.5143L23.182 51.3623L13.4567 51.2302L3.70149 51.3623L3.4917 49.5143L8.9912 47.6222V7.17159L3.50668 5.32359L3.71647 3.47559H29.5806ZM17.8623 26.6636L23.5117 27.7196L32.233 21.7649L34.9303 16.9396L32.233 12.0849L23.5117 6.45292L17.8623 7.18625V26.6636Z"
+                fill="#009ACE" />
+            </svg>
+            <div class="logo-animation">
+              <div>Demo</div>
+              <div>Week</div>
+            </div>
+          </div>
+        </a>
+
+        <nav>
+  <div class="nav-container hidden-xs">
+    <ul>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#project-section">Projekte</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#keynote2">Abschluss</a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-xs-container">
+    <input type="checkbox" class="checkbox" hidden id="click">
+    <label class="nav-hamburger" for="click"><img
+        src="https://archive.demoweek.prototypefund.de/runde7/assets/images/hamburger.png" /></label>
+    <ul class="navs">
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#keynote1">Eröffnung</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#project-section">Projekte</a>
+      </li>
+      <li class="nav-links">
+        <a href="https://archive.demoweek.prototypefund.de/runde7/#keynote2">Abschluss</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="project-container container">
+  <a href="https://archive.demoweek.prototypefund.de/runde7/" class="home-link">
+    <div class="flex-container justify-start align-center">
+      <img src="https://archive.demoweek.prototypefund.de/runde7/assets/images/back.png" />
+      <p>Zurück zur Startseite</p>
+    </div>
+  </a>
+  <div class="flex-container project justify-between">
+    <div class="project-details">
+      <div class="project-authors">
+        
+        <a >
+          Johannes Filter
+        </a>
+        
+      </div>
+      <h2 class="project-title">pd3f: PDF zu Fließtext mit maschinellem Lernen</h2>
+      <p class="project-brief">
+        Wir extrahieren Fließtext aus PDFs.
+      </p>
+      
+      <p class="project-description">
+        Durch lange Wörter im Deutschen sind aus PDF extrahierte Texte mit Zeilenumbrüchen zerstückelt. pd3f rekonstruiert mithilfe von maschinellem Lernen den ursprünglichen Fließtext.
+      </p>
+      
+    </div>
+    <div class="project-image">
+      
+      <img src="https://archive.demoweek.prototypefund.de/runde7/assets/images/project_images/DDD/header.png" />
+      
+    </div>
+  </div>
+  <div class="project-body">
+    <h1 id="pdf-zu-fließtext-mit-maschinellem-lernen">PDF zu Fließtext mit maschinellem Lernen</h1>
+
+<p>PDFs sind für Menschen gemacht und nicht für Maschinen (Computer).
+Das führt dazu, dass wir sie lesen können, aber Maschinen Probleme damit haben, Text zu extrahieren.
+Dies ist jedoch notwendig, um z. B. große Mengen von PDFs im Rahmen journalistischer Recherchen auszuwerten.
+Auch Personen mit Seheinschränkungen sind darauf angewiesen, dass Computer ihnen Texte vorlesen.
+Im Rahmen der bereits erfolgten oder geplanten Digitalisierung deutscher Behörden müssen zudem große Aktenbestände digitalisiert werden.</p>
+
+<h2 id="text-extrahieren-mit-pd3f">Text extrahieren mit <code class="language-plaintext highlighter-rouge">pd3f</code></h2>
+
+<p>Im Rahmen der Prototype-Fund-Förderung von “DDD: Deutsche Dokumente Digitalisieren” ist die Software-Lösung <code class="language-plaintext highlighter-rouge">pd3f</code> entstanden, um “guten” Text aus PDF zu rekonstruieren - 
+“gut” bedeutet hier, dass der ursprüngliche Text ohne unnötige Zeilenumbrüche wiederhergestellt werden kann.
+Aus dem zerstückelten Text im PDF wird somit wieder ein digitaler Fließtext.
+Im Deutschen gibt es viele lange Wörter und deswegen die Besonderheit, dass Wörter am Zeilenende getrennt werden.
+Bei einer üblichen Textextraktion werden getrennte Wörter jedoch nicht wieder zusammengefügt.
+Damit kann das ursprüngliche Wort z. B. nicht mehr per Suche gefunden werden.
+Auch weiterführende Anwendungen, wie z. B. die automatisierte Erkennung von Eigennamen (Named-Entity Recognition), werden erschwert.</p>
+
+<h2 id="automatisierte-texterkennung">Automatisierte Texterkennung</h2>
+
+<p>Texterkennung auf gescannten Dokumenten (Optical Character Recognition/OCR) erfolgt schon heute zufriedenstellend mit Open-Source-Lösungen.
+Es ist aber aufgrund des veralteten Portable Document Format (PDF) weiterhin schwierig, die Wörter aus einem PDF zu einem Text zusammenfassen.
+Das Format folgt der Idee des Druckens, weshalb Fließtext darin nicht als Text dargestellt wird. 
+Stattdessen wird teilweise jeder einzelne Buchstabe als Zeichen kodiert und ihm eine Position (x- und y-Wert für Höhe und Breite) auf dem (virtuellen) Blatt Papier zugewiesen.</p>
+
+<p><img src="/assets/images/project_images/DDD/pdf_buchstaben.jpg" alt="pdf_buchstaben.jpg" /></p>
+
+<p>Um aus diesem Buchstabensalat nutzen bestehen Tools Heuristiken, um Buchstaben zu Wörter zuzusammen zu setzen.
+Aus Wörtern müssen wieder ganze Zeilen und diese Zeilen anschließend zu Paragraphen zusammengefasst werden.
+Das ist ohnehin eine schwierige Aufgabe, da es für den Satz eines Textes nahezu endlose Möglichkeiten gibt.
+Das Open-Source-Tool <a href="https://github.com/axa-group/Parsr">Parsr</a> des französischen Versicherungskonzerns Axa sorgt bereits für Besserung, denn es zerlegt relativ erfolgreich ein PDF in Zeilen und Absätze.
+Das Tool ist wenige Monate vor Start der Projektförderung erschienen und erwies sich in der Projektphase als nützlich.
+Unsere Software <code class="language-plaintext highlighter-rouge">pd3f</code> füttert zunächste das PDF in Parsr und nutzt die Ausgabe von Parsr, um darauf aufbauend guten Text wiederherzustellen.</p>
+
+<h2 id="zeilenumbrüche-entfernen">Zeilenumbrüche entfernen</h2>
+
+<p>Worttrennung an Zeilenumbrüchen zu entfernen, ist eigentlich eine einfache Aufgabe: Alle Wörter mit einem “-“ am Zeilenende werden mit dem Wort auf der darauffolgenden Zeile zusammengefügt wie in diesem Beispiel.</p>
+
+<blockquote>
+  <p>… die Bedeutung der finan-</p>
+
+  <p>ziellen Interessen der Union …</p>
+</blockquote>
+
+<p>Das Wort “finanziellen” entspricht dem ursprünglichen Text.</p>
+
+<p>Es gibt aber auch “-“ am Zeilenenden, das nicht entfernt werden darf, weil es Bestandteil des Worter ist:</p>
+
+<blockquote>
+  <p>Auch andere EU-</p>
+
+  <p>Staaten, wie bspw. Polen, …</p>
+</blockquote>
+
+<p>Um an dieser Stelle weiterzukommen, braucht es mehr Verständnis über die deutsche Sprache.
+Hier kommt maschinelles Lernen in Form von Sprachmodellen zum Einsatz.</p>
+
+<h2 id="was-sind-sprachmodelle-language-models">Was sind Sprachmodelle? (Language Models)</h2>
+
+<p>Bei Sprachmodellen geht es darum, dass ein Computerprogramm neue Wörter auf der Basis bereits genutzter Wörter lernt.
+Zum Einsatz kommen Sprachmodelle z. B. auf Smartphones bei der Autovervollständigung.
+Sprachmodelle verinnerlichen die Charakteristiken der deutschen Sprache und können vorhersagen, welche Wörter oder Buchstaben wahrscheinlich als nächstes kommen.
+So kommt nach “Sehr geehrte” wahrscheinlich “Frau” als nächstes.</p>
+
+<p>Solche Sprachmodelle operieren auf ganzen Wörtern oder auch nur auf Buchstaben (um nachfolgende Buchstaben zu erraten).</p>
+
+<h2 id="texte-reparieren-mit-dehyphen">Texte reparieren mit <code class="language-plaintext highlighter-rouge">dehyphen</code></h2>
+
+<p>Eine Unterkomponente von <code class="language-plaintext highlighter-rouge">pd3f</code> ist das Softwarepaket <code class="language-plaintext highlighter-rouge">dehyphen</code>, welches ebenfalls im Rahmen der Förderung entstand.
+Es benutzt Sprachmodelle, um zu entscheiden ob ein “-“ am Zeilenende entfernt werden sollte oder nicht.
+Die Grundidee ist dabei eine Berechnung darüber, welche die wahrscheinliche Möglichkeit ist, zwei Zeilen zu verbinden.</p>
+
+<blockquote>
+  <p>Auch andere EU-</p>
+
+  <p>Staaten, wie bspw. Polen, …</p>
+</blockquote>
+
+<p>Bei diesem Beispiel kommt <code class="language-plaintext highlighter-rouge">dehyphen</code> zum richtigen Ergebnis: “EU-Staaten” ist korrekt, nicht “EUStaaten”.
+<code class="language-plaintext highlighter-rouge">dehyphen</code> kann als Modul von anderen Software-Entwickler*innen einfach wiederverwendet werden.</p>
+
+<h2 id="datenverarbeitungs-pipeline-pd3f">Datenverarbeitungs-Pipeline <code class="language-plaintext highlighter-rouge">pd3f</code></h2>
+
+<p>Das Hauptergebnis der Förderung ist <code class="language-plaintext highlighter-rouge">pd3f</code>: Eine komplette Anwendung und eine Datenverarbeitungs-Pipeline für PDFs.
+Mit ihrer Hilfe können (deutsche) Dokumente digitalisiert werden.
+Auf einem gescannten Dokument wird der Text automatisiert gescannt, dann mithilfe von Parsr der Text in Wörter, Zeilen und Absätze unterteilt.
+Anschließend wird mithilfe von <code class="language-plaintext highlighter-rouge">dehyphen</code> guter Text extrahiert.
+Anbei eine schematische Auflistung der benutzten Komponenten.</p>
+
+<p><img src="/assets/images/project_images/DDD/flow.jpg" alt="flow.jpg" /></p>
+
+<p><a href="https://demo.pd3f.com">Zur Demo von <code class="language-plaintext highlighter-rouge">pd3f</code></a></p>
+
+<p>Der Fokus liegt auf der deutschen Sprache, deren besonderes Charakteristikum lange Wörter sind, <code class="language-plaintext highlighter-rouge">pd3f</code> kann aber auch für andere Sprachen angewandt werden.
+Es ist aktuell auch für Englisch, Spanisch und Französisch verfügbar.</p>
+
+<p>Wer nach dieser kleinen Einführung mehr über <code class="language-plaintext highlighter-rouge">pd3f</code> erfahren möchte, dem sei die ausführliche Dokumentation zum Quellcode empfohlen.
+Der Code wird online <a href="https://github.com/pd3f/pd3f">https://github.com/pd3f/pd3f</a> stehen und weiter gepflegt.
+Die Hauptfunktionalitäten von <code class="language-plaintext highlighter-rouge">pd3f</code> sind zusätzlich in einem eigenen Python-Paket <a href="https://github.com/pd3f/pd3f-core">https://github.com/pd3f/pd3f-core</a> gebündelt, sodass auch hier eine einfach weitere Verwendung möglich ist.</p>
+
+<h2 id="weitere-arbeit">Weitere Arbeit</h2>
+
+<p>Da Dokumente in so vielen unterschiedlichen Formen vorkommen, funktioniert <code class="language-plaintext highlighter-rouge">pd3f</code> noch nicht für alle PDFs.
+Gerade bei schlecht gescannten PDFs ist der extrahierte Text zudem noch stark verbesserungsbedürftig.
+Es ist unwahrscheinlich, dass <code class="language-plaintext highlighter-rouge">pd3f</code> jemals für alle PDFs funktionieren wird, doch es wird weiterhin gearbeitet, die Resultate, z. B. für mehrspaltige Dokumente, zu verbessern.</p>
+
+<p>Was noch fehlt, ist eine systematische Evaluation der Textextrakte von <code class="language-plaintext highlighter-rouge">pd3f</code>.
+Diese wird voraussichtlich im September 2020 erfolgen.</p>
+
+<p>Ich danke dem Prototype Fund und dem DLR-Projektträger für die Betreuung des Projekts, Ame Elliott und Eileen Wagner von <a href="https://simplysecure.org/">Simply Secure</a> für das Coaching und dem BMBF für die finanzielle Förderung.</p>
+
+<p>Website: <a href="https://pd3f.com">https://pd3f.com</a><br />
+Twitter: <a href="https://twitter.com/pd3f_">https://twitter.com/pd3f_</a><br />
+GitHub: <a href="https://github.com/pd3f">https://github.com/pd3f</a></p>
+
+<p>von Johannes Filter</p>
+
+<p>Webseite: <a href="https://johannesfilter.com">https://johannesfilter.com</a><br />
+Twitter: <a href="https://twitter.com/fil_ter">https://twitter.com/fil_ter</a></p>
+
+
+  </div>
+</div>
+  <footer>
+  <div class="flex-container separator-container justify-between align-center">
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="blue-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+    <div class="pink-label separator-banner">
+      <div>Demo</div>
+      <div>Week</div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="flex-container justify-between footer-details">
+      <div class="footer-desc">
+        <p>
+          Der Prototype Fund ist ein Projekt der Open Knowledge Foundation Deutschland e. V.,
+          das vom Bundesministerium für Bildung und Forschung (BMBF) gefördert wird.
+        </p>
+        <div class="flex-container justify-start align-center">
+          <img src="https://archive.demoweek.prototypefund.de/runde7/assets/images/footer_logo.svg" />
+          <img src="https://archive.demoweek.prototypefund.de/runde7/assets/images/logo-okfn.png" style="margin-left: 5rem;" />
+        </div>
+      </div>
+      <div class="social-container">
+        <p>join the conversation<br />#prototypefund</p>
+        <div class="social-links">
+          <p>follow us:</p>
+          <div class="flex-container justify-end">
+            <a href="https://twitter.com/prototypefund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde7/assets/images/social_icons/twitter.png" /></a>
+            <a href="https://mastodon.social/@PrototypeFund" target="_blank" rel="nofollow noreferrer"><img
+                src="https://archive.demoweek.prototypefund.de/runde7/assets/images/social_icons/mastodon.png" /></a>
+          </div>
+        </div>
+        <div class="links-container">
+          <a class="link" href="https://prototypefund.de/code-of-conduct/" target="_blank"
+            rel="nofollow noreferrer">Code of Conduct</a>
+          <a class="link" href="https://prototypefund.de/impressum/" target="_blank" rel="nofollow noreferrer">Impressum
+            / Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
