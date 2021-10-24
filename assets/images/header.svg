@@ -1,0 +1,12 @@
+<svg width="481" height="230" viewBox="0 0 481 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<text opacity="0.8" stroke="#FF0080" stroke-width="2.17949" xml:space="preserve" style="white-space: pre" font-family="AT Surt" font-size="64" letter-spacing="0em"><tspan x="0" y="194.14">Prototype</tspan></text>
+<text stroke="#009ACE" stroke-width="2.17949" stroke-miterlimit="10" xml:space="preserve" style="white-space: pre" font-family="AT Surt" font-size="64" letter-spacing="0em"><tspan x="306" y="197.14">Fund</tspan></text>
+<rect x="222" y="64" width="37" height="29" fill="#161730"/>
+<mask id="path-4-outside-1_1417:880" maskUnits="userSpaceOnUse" x="196" y="0" width="89" height="107" fill="black">
+<rect fill="white" x="196" width="89" height="107"/>
+<path d="M255.074 2L267.41 3.51315L282 30.9389L267.41 53.9829C267.41 53.9829 250.758 58.2386 244.381 59.7518H229.855V96.8869L241.611 100.953L241.321 104.925L220.418 104.642L199.451 104.925L199 100.953L210.82 96.8869V9.94402L199.032 5.97201L199.483 2H255.074ZM229.888 51.8393L242.03 54.109L260.775 41.3103L266.573 30.9389L260.775 20.5045L242.03 8.39935L229.888 9.97554V51.8393Z"/>
+</mask>
+<path d="M255.074 2L267.41 3.51315L282 30.9389L267.41 53.9829C267.41 53.9829 250.758 58.2386 244.381 59.7518H229.855V96.8869L241.611 100.953L241.321 104.925L220.418 104.642L199.451 104.925L199 100.953L210.82 96.8869V9.94402L199.032 5.97201L199.483 2H255.074ZM229.888 51.8393L242.03 54.109L260.775 41.3103L266.573 30.9389L260.775 20.5045L242.03 8.39935L229.888 9.97554V51.8393Z" stroke="white" stroke-width="4" mask="url(#path-4-outside-1_1417:880)"/>
+<rect x="151" y="64" width="179" height="24" fill="#161730"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="AT Surt" font-size="18" letter-spacing="0em"><tspan x="160" y="81.68">Demo Week Archive</tspan></text>
+</svg>

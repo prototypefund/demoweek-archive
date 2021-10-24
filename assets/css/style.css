@@ -2,38 +2,14 @@
   font-size: 16px;
 }
 
-/* barlow-regular - latin */
 @font-face {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    url("assets/fonts/barlow/barlow-v5-latin-regular.woff2") format("woff2"),
-    url("assets/fonts/barlow/barlow-v5-latin-regular.woff") format("woff");
+  font-family: "Surt";
+  src: local("Surt"), url("assets/fonts/Surt-Bold.otf");
 }
 
-/* barlow-700 - latin */
 @font-face {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""),
-    url("assets/fonts/barlow/barlow-v5-latin-700.woff2") format("woff2"),
-    url("assets/fonts/barlow/barlow-v5-latin-700.woff") format("woff");
-}
-
-/* barlow-semi-condensed-300 - latin */
-@font-face {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local(""),
-    url("assets/fonts/barlow-semi-condensed/barlow-semi-condensed-v6-latin-300.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("assets/fonts/barlow-semi-condensed/barlow-semi-condensed-v6-latin-300.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: "Surt";
+  src: local("Surt"), url("assets/fonts/Surt-Regular.otf");
 }
 
 html {
@@ -43,77 +19,72 @@ html {
 body {
   margin: 0;
   height: 100%;
-  font-family: "Barlow", sans-serif;
+  font-family: "AT Surt", sans-serif;
   line-height: 1.6;
-  color: #0f172a;
+  background-color: #161730;
+  color: #8385b7;
   display: grid;
   place-items: center;
-  background-color: #f1f5f9;
-  background-image: url("assets/images/pattern.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 a {
-  color: #0891b2;
+  color: #009ace;
 }
 
 a:hover {
-  color: #155e75;
+  color: #ff0080;
 }
 
 header {
-  margin: 2rem 0;
+  margin: 2rem 1rem;
 }
 
 footer {
   padding: 1rem 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1 {
   font-size: clamp(2rem, 1.5vw + 1.7rem, 3rem);
   line-height: clamp(2rem, 1.5vw + 1.7rem, 3rem);
-  color: #155e75;
-  margin: 0;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 300;
 }
 
 main {
-  max-width: 30rem;
+  max-width: 50rem;
   padding: 2rem;
-  border: 3px solid #0e7490;
-  border-radius: 0.25rem;
-  background-color: #fff;
   margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 30rem) {
   main {
     padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
 .btn {
-  display: block;
-  width: 100%;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
+  padding: 0.75rem 1rem;
+  background-color: #ff0080;
+  color: #fff;
+  position: relative;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: -0.5rem -0.5rem 0 #009ace;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
   text-decoration: none;
-  cursor: pointer;
-  user-select: none;
-  border: 1px solid transparent;
-  font-size: 1rem;
-  font-family: Barlow, sans-serif;
-  transition: 0.3s ease-in-out;
-  padding: 1.25rem 1.625rem;
-  color: #f4f4f5;
-  background-color: #0e7490;
-  border-radius: 0.125rem;
 }
 
 .btn:hover {
-  background-color: #155e75;
+  color: #fff;
+  box-shadow: 0 0 0 #009ace;
+  background-color: #009ace;
 }
