@@ -172,7 +172,7 @@
 
 <p>Unser Ziel – für dessen Erreichung wir uns <a href="https://prototypefund.de/project/dystonse-wahrscheinlichkeitsbasierte-oepnv-routensuche/">beim Prototype Fund beworben haben</a> – ist eine vollständige Routenauskunft von A nach B, die schon während der Suche Verspätungen, Prognosen und Wahrscheinlichkeiten einbezieht. Bisher gab es das so noch nicht. Dass es prinzipiell möglich wäre, haben wir schon mit <a href="https://dystonse.org/route">unserem ersten Prototypen von 2019</a> gezeigt, der damals so aussah:</p>
 
-<p><a href="/assets/images/project_images/dystonse/prototype.jpg"><img title="Screenshot unseres ersten Prototyps von Ende 2019" src="/assets/images/project_images/dystonse/prototype.jpg" /></a></p>
+<p><a href="/assets/images/project_images/dystonse/prototype.jpg"><img src="/assets/images/project_images/dystonse/prototype.jpg" alt"Screenshot unseres ersten Prototyps von Ende 2019" /></a></p>
 
 <p>Den Prototypen haben wir damals innerhalb weniger Tage entwickelt – entsprechend unvollständig und fehlerhaft ist er auch. Außerdem sind die Daten, auf denen das Verspätungsmodell dort basiert, eine extreme Vereinfachung, die in der Realität nicht sehr nützlich ist.</p>
 
@@ -180,8 +180,8 @@
 
 <p>Pünktlich zur Demo Week präsentieren wir unseren <strong>erweiterten Abfahrtsmonitor</strong>. Anders als die leuchtenden Anzeigen, die über manch einer Haltestelle hängen, zeigt er dir nicht nur die Abfahrten an deiner Start-Haltestelle an, sondern mit einem Klick auch den weiteren Verlauf der Linie und wie sich ihre Pünktlichkeit voraussichtlich entwickeln wird. Von da aus kannst du den Halt auswählen, an dem du aus- oder umsteigst, und Klick für Klick selbst deine Route zusammenstellen. Der Monitor zeigt dir jeweils an, wann du ungefähr ankommen wirst und wie wahrscheinlich die Umstiege sind.</p>
 
-<p><a href="/assets/images/project_images/dystonse/abfahrten.png"><img class="dystonse-image" title="Screenshot 1" src="/assets/images/project_images/dystonse/abfahrten.png" /></a>
-<a href="/assets/images/project_images/dystonse/halte.png"><img class="dystonse-image" title="Screenshot 2" src="/assets/images/project_images/dystonse/halte.png" /></a></p>
+<p><a href="/assets/images/project_images/dystonse/abfahrten.png"><img class="dystonse-image" src="/assets/images/project_images/dystonse/abfahrten.png" alt"Screenshot 1" /></a>
+<a href="/assets/images/project_images/dystonse/halte.png"><img class="dystonse-image" src="/assets/images/project_images/dystonse/halte.png" alt"Screenshot 2" /></a></p>
 
 <p>Hier kannst du den erweiterten Abfahrtsmonitor für den <strong>Verkehrsverbund Bremen/Niedersachsen</strong> gleich ausprobieren. Gib den Namen einer Haltestelle ein und klicke dann auf “Abfahrten anzeigen”:</p>
 
@@ -263,7 +263,7 @@
 
 <p>Bei den Linien, von denen wir viele Echtzeitdaten aufgezeichnet haben, können wir nicht nur eine Kurve für jede Haltestelle berechnen, sondern auch die Abhängigkeit zwischen verschiedenen Haltestellen und den Einfluss vorheriger Verzögerungen. Also z. B. “wenn diese Straßenbahn an Haltestelle Nr. 20 mit 220 Sekunden Verspätung abfährt, wie verteilt sich dann die Ankunftszeit an Haltestelle Nr. 45”. Das sieht dann so aus:</p>
 
-<p><a href="/assets/images/project_images/dystonse/curve_20_to_45.svg"><img title="Straßenbahn Linie 4 nach Arsten - Verspätungsentwicklung von #20 'Bremen Bürgermeister-Spitta-Allee' bis #45 'Bremen Kattenturm-Mitte'" src="/assets/images/project_images/dystonse/curve_20_to_45.svg" /></a></p>
+<p><a href="/assets/images/project_images/dystonse/curve_20_to_45.svg"><img src="/assets/images/project_images/dystonse/curve_20_to_45.svg" alt"Straßenbahn Linie 4 nach Arsten - Verspätungsentwicklung von #20 'Bremen Bürgermeister-Spitta-Allee' bis #45 'Bremen Kattenturm-Mitte'"/></a></p>
 
 <p>Wer genauer wissen will, wie diese Grafik zu lesen ist, findet alle Infos dazu in unserem <a href="https://blog.dystonse.org/analysis/2020/06/10/kurven.html">Blogpost</a>.</p>
 
@@ -291,7 +291,7 @@
 
 <p>Im Prinzip ist die Berechnung dieser Prognosen ein eigener <code class="language-plaintext highlighter-rouge">predict</code>-Schritt in der Datenverarbeitung, wie er im nachfolgenden Diagramm auch zu sehen ist. In Wirklichkeit finden diese Berechnungen bei uns schon im <code class="language-plaintext highlighter-rouge">import</code>-Schritt statt, so dass jede Echtzeit-Datei nur einmal verarbeitet wird.</p>
 
-<p><a href="/assets/images/project_images/dystonse/stack_dark_theme.svg"><img title="Übersicht über unseren Software-Stack" src="/assets/images/project_images/dystonse/stack_dark_theme.svg" /></a></p>
+<p><a href="/assets/images/project_images/dystonse/stack_dark_theme.svg"><img src="/assets/images/project_images/dystonse/stack_dark_theme.svg" alt"Übersicht über unseren Software-Stack" /></a></p>
 
 <p>Bei <code class="language-plaintext highlighter-rouge">collect</code> handelt es sich um ein paar Shell-Skripte. Die Komponenten <code class="language-plaintext highlighter-rouge">import</code>, <code class="language-plaintext highlighter-rouge">analyse</code>, <code class="language-plaintext highlighter-rouge">predict</code> und auch <code class="language-plaintext highlighter-rouge">monitor</code> sind in der Sprache Rust geschrieben und sind Module innerhalb unseres Universalwerkzeugs <code class="language-plaintext highlighter-rouge">dystonse-gtfs-data</code> (<a href="https://github.com/dystonse/dystonse-gtfs-data">zum Code</a>). Sie haben also alle die selbe Codebasis, aber laufen als eigenständige Prozesse. Außerdem muss eine <a href="https://www.mysql.com/">MySQL</a>-Datenbank laufen, auf welche die anderen Komponenten zugreifen, und ein gemeinsam genutztes Verzeichnis für die Dateiablage vorhanden sein. Zusammen mit <a href="https://www.phpmyadmin.net/">phpMyAdmin</a>, das wir zur Pflege der Datenbank verwenden, erreicht der Software-Stack also einiges an Komplexität.</p>
 
