@@ -119,7 +119,7 @@
   <div class="project-body">
     <h2 id="der-eine-schlüssel-zur-digitalen-identität">Der eine Schlüssel zur digitalen Identität</h2>
 
-<p><img src="/assets/images/project_images/Identity_Stick/hacker_solo_innen_aussen.jpg" alt"Hacker solo" /></p>
+<p><img src="/runde7/assets/images/project_images/Identity_Stick/hacker_solo_innen_aussen.jpg" alt"Hacker solo" /></p>
 
 <p>Niemand mag Passwörter. Wir nehmen sie hin, um unser digitales Ich zu schützen. Wer online einen Carsharing Account eröffnen, ein Bankkonto anlegen oder sich einfach den Gang zur Behörde durch einen digitalen Antrag ersparen will, der muss sich mit weiteren Verfahren auseinandersetzen: Ausweis Apps, SMS-TAN, WebCam-Verfahren und vieles mehr. Unsere persönlichen Daten zu sichern, wird so immer komplizierter und wir verlieren den Überblick. Wo habe ich welches Passwort verwendet? Und wie kann ich meinen digitalen Ausweis freischalten? Mit der Verantwortung und Verwaltung all dieser Maßnahmen bleiben wir als Nutzer*innen alleine – und sind am Ende die Leidtragenden, wenn jemand in unserem Namen Geld auf fremde Konten abbucht.</p>
 
@@ -143,7 +143,7 @@
 
 <h2 id="der-passwortlose-login">Der passwortlose Login</h2>
 
-<p><img src="/assets/images/project_images/Identity_Stick/drei_sticks_übereinander.jpg" alt"Die Sticks übereinander" /></p>
+<p><img src="/runde7/assets/images/project_images/Identity_Stick/drei_sticks_übereinander.jpg" alt"Die Sticks übereinander" /></p>
 
 <p>Wir sind es gewöhnt, unseren Benutzernamen und Passwort einzugeben, wenn wir uns zum Beispiel in unseren Social-Media-Account einloggen. Beim passwortlosen Login reicht der Benutzername aus. Zur Überprüfung der Nutzer*innen wird dann nicht das Wissen über ein Passwort sondern der Besitz eines Sicherheitsschlüssels, auch Authentikator genannt, verwendet. Dies kann ein USB-Stick sein, aber auch Computer oder Smartphone können Sicherheitsschlüssel sein. Das bietet mehr Sicherheit als ein Login mit Passwort. Da gar keine Passwörter mehr verwendet werden, können Passwörter auch nicht auf gefälschten Anmeldeseiten, zum Beispiel durch <a href="https://de.wikipedia.org/wiki/Phishing">Phishing</a>, gestohlen werden. Ebenso hängt die Sicherheit des Accounts nicht mehr von der Wahl eines guten Passworts ab und automatisierter Identitätsdiebstahl im großen Stil wird ausgeschlossen. Da der gleiche Sicherheitsschlüssel bei allen Webseiten verwendet werden kann, bietet der passwortlose Login eine bessere Usability als Passwörter. Denn Nutzer*innen müssen sich nichts spezielles für gewisse Webseiten merken, sondern melden sich stets gleich an.<br />
 Der offene Standard <a href="https://fidoalliance.org/fido2/">FIDO2 (<strong>F</strong>ast <strong>Id</strong>entity <strong>O</strong>nline</a>) verspricht genau so einen passwortlosen Login. Er wird von der nicht-kommerziellen <a href="https://fidoalliance.org/members/">FIDO Allianz</a> entwickelt, der bisher ca. 250 große Unternehmen (u. a. Google, Facebook, Amazon und viele mehr) und öffentliche Partner wie das deutsche Bundesamt für Sicherheit in der Informationstechnik (BSI) angehören. Da sich inzwischen auch Apple der Allianz angeschlossen hat, unterstützen alle wichtigen Browser (Chrome, Firefox, Edge, Opera, Safari) den Standard.<br />
@@ -157,7 +157,7 @@ Durch diese breite Unterstützung und Verbreitung hat der FIDO2 Standard großen
 
 <h2 id="und-wie-funktioniert-das-technisch">Und wie funktioniert das technisch?</h2>
 
-<p><a href="/assets/images/project_images/Identity_Stick/fido_process.jpg"><img src="/assets/images/project_images/Identity_Stick/fido_process.jpg" alt"FIDO-Process" /></a></p>
+<p><a href="/runde7/assets/images/project_images/Identity_Stick/fido_process.jpg"><img src="/runde7/assets/images/project_images/Identity_Stick/fido_process.jpg" alt"FIDO-Process" /></a></p>
 
 <p>Wenn Nutzer*innen einen Sicherheitsschlüssel zum Beispiel bei ihrem Mail-Account verwenden möchten, müssen sie diesen zunächst dort registrieren. Dabei werden zwei neue Schlüssel auf dem Sicherheitsschlüssel erzeugt: ein privater und ein öffentlicher Schlüssel. Der öffentliche Schlüssel wird für den Mail-Account beim Mail-Anbieter gespeichert, während der private Schlüssel den Sicherheitsschlüssel nie verlässt. Für jeden Dienst und jede*n Nutzer*in werden auf dem Sicherheitsschlüssel unterschiedliche Schlüsselpaare erzeugt.<br />
 Man kann sich das wie ein schwarzes Brett hinter einer Vitrine vorstellen, das jeder einsehen  kann, der den öffentlichen Schlüssel hat. Die Vitrine kann jedoch nur mit dem privaten Schlüssel geöffnet werden. Um zu überprüfen, ob jemand den privaten Schlüssel besitzt, kann man dieser Person also eine Information mitteilen (z. B. die Zahl “12”) und sie auffordern diese auf das schwarze Brett zu schreiben. Wenn dann “12” auf dem schwarzen Brett auftaucht, können wir bestätigen, dass die Person Zugang zum privaten Schlüssel hat.</p>
@@ -181,7 +181,7 @@ Die Idee für die Bestätigung der Informationen lässt sich mit einem versiegel
 
 <p>Diensteanbieter berechnen nun erneute den Hash der Attribute. Mittels des öffentlichen Schlüssels wird der signierte Hash entschlüsselt und mit dem berechneten verglichen. Dadurch können Diensteanbietende die Bestätigung der Attribute überprüfen. Dazu wird der Hash der Daten erneut berechnet. Dies ist vergleichbar mit der Überprüfung der Aussage des Boten mit dem Inhalt im versiegelten Brief.</p>
 
-<p><a href="/assets/images/project_images/Identity_Stick/identity_stick_process.jpg"><img src="/assets/images/project_images/Identity_Stick/identity_stick_process.jpg" alt"Identity-Stick-Process" /></a></p>
+<p><a href="/runde7/assets/images/project_images/Identity_Stick/identity_stick_process.jpg"><img src="/runde7/assets/images/project_images/Identity_Stick/identity_stick_process.jpg" alt"Identity-Stick-Process" /></a></p>
 
 <p>Für den Prototyp wurde auf dem Solo <a href="https://github.com/solokeys/solo">FIDO2 Stick “Solo for Hackers”</a> aufgebaut, dessen Firm- und Hardware offen zur Verfügung stehen. Für die Umsetzung wurde eine Anpassung des Solo Codes vorgenommen, die das oben beschriebene Protokoll implementiert. Da der Solo nur begrenzten Speicher zur Verfügung hat, müssen zum Senden der Attribute mehrere Nachrichten ausgetauscht werden. Zum Testen und für die Erzeugung der signierten Daten wurden entsprechende Skripte erstellt.</p>
 
@@ -205,7 +205,7 @@ Die Idee für die Bestätigung der Informationen lässt sich mit einem versiegel
 
 <h3 id="passwortlos-anmelden">Passwortlos anmelden</h3>
 
-<p><a href="/assets/images/project_images/Identity_Stick/Flow_Fido1FA.png"><img src="/assets/images/project_images/Identity_Stick/Flow_Fido1FA.png" alt"Fido1FA User Flow" /></a></p>
+<p><a href="/runde7/assets/images/project_images/Identity_Stick/Flow_Fido1FA.png"><img src="/runde7/assets/images/project_images/Identity_Stick/Flow_Fido1FA.png" alt"Fido1FA User Flow" /></a></p>
 
 <p>Beim Starten auf einer Login-Seite wurde die Auswahl um die Möglichkeit ‘Passwortlos anmelden’ erweitert, um die Begrifflichkeit des ‘Sicherheitsschlüssels’ zu vermeiden. Die Informationen und Auswahlmöglichkeiten des USB-Sticks wurden über Overlays abgebildet, wie es bei den bestehenden FIDO2-Implementationen schon Praxis ist.</p>
 
