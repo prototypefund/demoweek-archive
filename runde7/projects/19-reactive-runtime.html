@@ -118,7 +118,7 @@
 <p>Veröffentlichungen und Reproduzierbarkeit ist ein Grundstein der wissenschaftlichen Methodik. Zur Bereitstellung von Daten, Analysen und Code erfreuen sich <a href="https://jupyter.org/">Jupyter Notebooks</a> steigender Beliebtheit.
 Notebooks sind interaktive Dokumente, in denen man Code entwickeln kann und die Resultate als multi-media output angezeigt bekommt:</p>
 
-<p><img src="/assets/images/project_images/ReactiveRuntime/example-notebook.png" alt="Ein klassisches Jupyter Notebook für eine Datenanalyse" /><br />
+<p><img src="/runde7/assets/images/project_images/ReactiveRuntime/example-notebook.png" alt="Ein klassisches Jupyter Notebook für eine Datenanalyse" /><br />
 <small>Ein klassisches Jupyter Notebook für eine Datenanalyse</small></p>
 
 <p>Die Veröffentlichung dieser Notebooks und die Interaktivität der generierten Graphiken gestaltet sich jedoch als Anspruchsvoll.</p>
@@ -136,7 +136,7 @@ Wissenschaftlern wird es so ermöglicht Ihre Forschungen besser zu erklären und
 Das Projekt setzt auf die von mir geschriebene Plotting Bibliothek <a href="https://github.com/JuliaPlots/Makie.jl/">Makie.jl</a> auf, welche von Grund auf für interaktive Anwendungen konzipiert worden ist.
 Mein Vortrag von der <a href="https://juliacon.org/2020/">JuliaCon 2020</a> gibt eine Übersicht über die Fähigkeiten:</p>
 
-<p><a href="https://youtu.be/ACqBmDlhTBU"><img src="/assets/images/project_images/ReactiveRuntime/89909417-5486ab80-dbef-11ea-9a31-2f2a0b7596e6.png" alt="image" />
+<p><a href="https://youtu.be/ACqBmDlhTBU"><img src="/runde7/assets/images/project_images/ReactiveRuntime/89909417-5486ab80-dbef-11ea-9a31-2f2a0b7596e6.png" alt="image" />
 </a></p>
 
 <p>Was bis jetzt fehlte, war ein performantes Web backend und die Möglichkeit die interaktiven Plots ohne einen laufenden Julia Server zu veröffentlichen.
@@ -146,7 +146,7 @@ Makie hat schon von Anfang an <a href="https://github.com/JuliaGizmos/Observable
 
 <p>Die vollständige Notebookintegration der ReactiveRuntime ist ein wenig in den Hintergrund geraten, da ungleich später das Projekt <a href="https://github.com/fonsp/Pluto.jl">Pluto.jl</a> gestartet worden ist, welches zu 100 % die Reactive Runtime implementiert, die Ursprünglich von diesem Projekt beschrieben worden ist und welche dem gleichen Ausführungsmodell wie <a href="https://observablehq.com/">ObservablHQ</a> folgt:</p>
 
-<p><img src="/assets/images/project_images/ReactiveRuntime/80617037-e2c09280-8a41-11ea-9fb3-18bb2921dd9e.gif" alt="pluto.gif" /><br />
+<p><img src="/runde7/assets/images/project_images/ReactiveRuntime/80617037-e2c09280-8a41-11ea-9fb3-18bb2921dd9e.gif" alt="pluto.gif" /><br />
 <small>Pluto.jl in Aktion: interaktive Grafiken sind sehr einfach zu programmieren</small></p>
 
 <p>Dies hat den Fokus auf Geschwindigkeit und den statischen Export interaktiver Plots von komplexen Modellen verschoben, was Pluto bis jetzt noch nicht unterstützt.</p>
@@ -185,14 +185,14 @@ Makie hat schon von Anfang an <a href="https://github.com/JuliaGizmos/Observable
 <p>Wie schon erwähnt ist die Basis für ReactiveRuntime die Plotting Bibliothek <a href="https://github.com/JuliaPlots/Makie.jl">Makie.jl</a>. Dieses Projekt hat das high Performance Web backend (<a href="https://github.com/JuliaPlots/WGLMakie.jl">WGLMakie</a>) weiter ausgebaut und optimiert. WGLMakie benutzt <a href="https://github.com/SimonDanisch/JSServe.jl">JSServe.jl</a> um interaktive Grafiken von Julia aus mit <a href="https://threejs.org/">ThreeJS</a> &amp; <a href="https://de.wikipedia.org/wiki/WebGL">WebGL</a> im Browser zu rendern.
 JSServe ist eine Bibliothek um in Julia interaktive HTML + Javascript Anwendungen zu bauen, welche nun auch ohne einen laufenden Julia Server präsentiert werden können. JSServe ist auch außerhalb von Makie nutzbar, was die Anwendung der neuen Funktionen noch relevanter macht. Einen kurzen Überblick über JSServe habe ich zur JuliaCon 2020 vorgetragen:</p>
 
-<p><a href="https://youtu.be/3XBlosGT7rI"><img src="/assets/images/project_images/ReactiveRuntime/89909956-ebebfe80-dbef-11ea-8120-b4c34ac49396.png" alt="image" /></a></p>
+<p><a href="https://youtu.be/3XBlosGT7rI"><img src="/runde7/assets/images/project_images/ReactiveRuntime/89909956-ebebfe80-dbef-11ea-8120-b4c34ac49396.png" alt="image" /></a></p>
 
 <p>Da JSServe auch Observables.jl benutzt, funktioniert es perfekt mit Makie und dessen Compute-Graph zusammen.
 Zum Beispiel, in einem interaktiven Plot, bei dem nur die Farbe + marker Größe bei einer Interaktion verändert wird, macht Observables es möglich nur diese zum Browser zu schicken, was nur wenigen Bytes entspricht.
 Dies hilft auch sehr bei dem offline Modus, da durch das Fehlen des Julia Prozesses alle Daten im Voraus berechnet werden müssen. In ReactiveRuntime haben wir vollständiges Wissen, welche Daten <em>wirklich</em> gespeichert werden müssen, um eine interaktive Graphik zu erstellen. Wenn auf dem Weg zur Graphik Gigabytes an Daten verarbeitet werden müssen, aber am Ende nur ein paar Positionen und Farben verändert werden, speichert ReactiveRuntime nur diese!
 So ist die Statemap für folgende Visualisierung nur ~0.1MB groß (klick für interaktiven Demo):</p>
 
-<p><a href="https://simondanisch.github.io/WGLDemos/simple/"><img src="/assets/images/project_images/ReactiveRuntime/89910707-de834400-dbf0-11ea-9199-c5d4b606158b.gif" alt="simple" /></a></p>
+<p><a href="https://simondanisch.github.io/WGLDemos/simple/"><img src="/runde7/assets/images/project_images/ReactiveRuntime/89910707-de834400-dbf0-11ea-9199-c5d4b606158b.gif" alt="simple" /></a></p>
 
 <p>Die Statemap kann für jegliche JSServe Applikationen generiert werden. Es werden automatisch alle Input Elemente wie Slider in der Julia App gefunden und die Kommunikation mit dem Julia Prozess wird durch einen lookup in Javascript ersetzt. Dies funktioniert natürlich nur für <a href="https://en.wikipedia.org/wiki/Pure_function">pure Funktionen</a> und Input Elemente mit einer finiten Anzahl an states, wie Slider und Dropdowns. Die Input Elemente werden durch ein Trait System definiert, also jeder Benutzer kann eigene Inputs definieren, indem man folgende Funktionen überlädt:</p>
 
