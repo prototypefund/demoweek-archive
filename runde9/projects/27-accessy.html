@@ -130,13 +130,13 @@
 
 <p>Das Ablaufen einer Route wird dann blindengerecht über eine Sprachausgabe ermöglicht. Anders als bei konventionellen Kartendiensten gibt Accessy weitere Informationen zu den einzelnen Wegabschnitten aus: Anzahl an Treppenstufen, ob es ein Geländer gibt und wenn, auf welcher Seite, Vibration oder Piepton an Ampeln, ob es sich um eine Fußgängerzone handelt und vieles mehr.</p>
 
-<p><img src="/assets/images/project_images/accessy/1.png" alt="1.png" /></p>
+<p><img src="/runde9/assets/images/project_images/accessy/1.png" alt="1.png" /></p>
 
 <h2 id="die-serveranwendung">Die Serveranwendung</h2>
 
 <p>Das Herzstück von Accessy ist die Serveranwendung. Hier werden zum einen alle Infrastruktur-, Routen und User*innen-Daten gespeichert und das korrekte Anlegen der Infrastruktur überprüft. Zum anderen findet hier die Berechnung für Routen statt. Diese Berechnung erfolgt mit Hilfe des <a href="https://de.wikipedia.org/wiki/Dijkstra-Algorithmus">Dijkstra Algorithmus</a>. Wenn eine Infrastruktur angelegt wird, dann erhält sie je nach Art (Fußgängerzone, Gehweg, unsichere Straßenüberquerung) und Beschaffenheit (Breite des Gehwegs, Kopfsteinpflaster, Zebrastreifen mit stark befahrener Straße) einen Barriereindikator. So kann die schnellste und barrierefreiste Route berechnet werden.</p>
 
-<p><img src="/assets/images/project_images/accessy/2.png" alt="2.png" /></p>
+<p><img src="/runde9/assets/images/project_images/accessy/2.png" alt="2.png" /></p>
 
 <h1 id="technische-aspekte">Technische Aspekte</h1>
 
@@ -144,7 +144,7 @@
 
 <p>Außerdem ist noch eine <a href="https://github.com/NeoGolightly/AccessySwiftSDK">iOS SDK</a> entstanden, die es anderen Entwickler*innen erleichtert, Accessy in ihre App einzubauen. Die SDK ist mit dem neuen <a href="https://developer.apple.com/documentation/docc">DocC Format von Apple</a> dokumentiert und <a href="http://api.accessy.city/documentation/accessyswiftsdk">hier</a> zu finden.</p>
 
-<p><img src="/assets/images/project_images/accessy/3.png" alt="3.png" /></p>
+<p><img src="/runde9/assets/images/project_images/accessy/3.png" alt="3.png" /></p>
 
 <p>Die Open-Source-Anwendung Accessy ist aber nicht nur für iOS ausgelegt. Über eine REST Schnittstelle kann jeder mit Accessy interagieren.</p>
 
