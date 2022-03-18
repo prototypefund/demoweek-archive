@@ -126,7 +126,7 @@
 
 <p>Machine Learning (ML) hat sich in den letzten Jahren als ein wichtigerBestandteil in vielen Softwareprojekten etabliert. Dies stellt Entwicklungsteamsjedoch vor neue Herausforderungen, vor allem im Bereich der Infrastruktur undKollaboration. Anders als bei der Entwicklung von klassischenSoftwarelösungen, wie z.B. Mobile Apps oder Web Applikationen, spielt dasExperimentieren mit verschiedenen Ansätzen, Parametrisierungen undTechnologien eine zentrale Rolle im ML Prozess. Des Weiteren wird sichererZugriff und Verarbeitung von großen, oft sensitiven Datenmengen, Zugriff aufspezialisierte Hardware (<a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPUs</a>, <a href="https://en.wikipedia.org/wiki/Tensor_Processing_Unit">TPUs</a>, ausreichend <a href="https://de.wikipedia.org/wiki/Random-Access_Memory">Arbeitsspeicher</a>) unddadurch häufig die Verwendung von verteilten Cloud Ressourcen benötigt. DieEntwicklung von ML Lösungen auf dem eigenen Computer kann dabei schnellan seine Grenzen stoßen.</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/data-science-lifecycle.png" alt="Data Science Lifecycle" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/data-science-lifecycle.png" alt="Data Science Lifecycle" /></p>
 
 <p>Quelle: <a href="https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview">What is the Team Data Science Process?</a></p>
 
@@ -150,7 +150,7 @@
 
 <p>Der ML Workspace ist eine all-in-one webbasierte <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> mit Fokus auf ML und Data Science. Er baut auf dem bekannten Open-Source <a href="https://jupyter.org/">Projekt Jupyter</a> auf und hat eine Menge an populären Data Science Libraries (z.B. Tensorflow, PyTorch, Sklearn) und Entwicklungstools (z.B. VS Code, Tensorboard) vorinstalliert, - konfiguriert und -integriert. Dazu gehören Aspekte wie die einfache Bedienbarkeit - zum Beispiel ist das Aufsetzen einer SSH Verbindung nur einen Klick entfernt - und Sicherheit - wir haben das Jupyter Sicherheitskonzept erweitert und alle Tools innerhalb des Workspaces abgesichert. Da der Workspace zudem einfach lokal oder auf einer Cloudinstanz als Docker Container gestartet werden kann, ist die Entwicklungsumgebung innerhalb kurzer Zeit verfügbar.</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/workspace.png" alt="ML Workspace" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/workspace.png" alt="ML Workspace" /></p>
 
 <p>Über den einfach zu konfigurierenden SSH-Zugang kann man zum Beispiel den lokalen VS Code Editor benutzen um Dateien auf einem Cloud-Workspace zu editieren und dort auch ausführen zu lassen. Wir benutzen den Workspace zum Beispiel, um auf einer Cloudinstanz zu entwickeln, Tests auszuführen und Artefakte wie zum Beispiel Docker Images zu bauen. Wenn SSH oder das Jupyter Notebook nicht ausreichen, kann der Workspace sogar über das integrierte VNC-Tool mit einer grafischen Oberfläche bedient werden. In einem Teamsetup bietet der Workspace den Vorteil, dass direkt jedes Teammitglied dieselbe Umgebung zur Verfügung hat, aber dennoch die Freiheit besitzt, Änderungen vorzunehmen.</p>
 
@@ -160,19 +160,19 @@
 
 <p>Das <a href="https://github.com/ml-tooling/ml-hub">ML Hub Projekt</a> baut auf <a href="https://jupyter.org/hub">JupyterHub</a> auf und ermöglicht die Orchestration von ML Workspaces mit Fokus auf eine Multi-User Umgebung. ML Hub ermöglicht es demnach, mehrere Workspaces zu starten und zugänglich zu machen, damit auch neben Jupyter Notebooks die vorhandenen Tools und Funktionalitäten wie zum Beispiel der SSHZugriff reibungslos funktionieren. In einem Teamsetup kann also zum Beispiel der Teamlead oder jedes Mitglied per Self-Service neue Workspaces konfigurieren und starten. So eine Konfigurationsmöglichkeit und der sich ergebende Überblick sind enorm wichtig beim Teilen und Verteilen vorhandener Computing-Ressourcen.</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/named-servers.png" alt="Named Servers" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/named-servers.png" alt="Named Servers" /></p>
 
 <h2 id="expyriments">Expyriments</h2>
 
 <p>Wie anfangs beschrieben ist das Experimentieren häufig eine Phase eines ML Projektes. <a href="https://github.com/ml-tooling/expyriments">Expyriments</a> ist eine Python Tracking Library, mit welcher Metriken und Informationen gesammelt, zentral gespeichert und dann auf einem ML Tooling: Dein Machine Learning Setup Leicht Gemacht Dashboard angezeigt werden können. Ein bekanntes Tool für das Tracken und Anzeigen von Datenreihen ist <a href="https://www.tensorflow.org/tensorboard">TensorBoard</a>, welches direkt in Expyriments integriert ist. Somit ergänzen sich Expyriments und TensorBoard um eine bessere Kollaboration und Experimentenübersicht zu ermöglichen und es unter anderem einfacher zu machen, Experimente zu reproduzieren.</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/expyriments.png" alt="" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/expyriments.png" alt="" /></p>
 
 <h2 id="lazycluster">Lazycluster</h2>
 
 <p><a href="https://github.com/ml-tooling/lazycluster">Lazycluster</a> ist eine experimentelle Library im Bereich verteiltes Machine Learning. Dabei werden Aufgaben auf mehrere Computer verteilt und somit Zugriff auf mehr Ressourcen ermöglicht. Dafür benutzt Lazycluster SSH Verbindungen. Lazycluster abstrahiert vorhandene Libraries des Verteilten ML Bereiches (im Moment <a href="https://distributed.dask.org/en/latest/">DASK</a> und <a href="https://github.com/hyperopt/hyperopt">Hyperopt</a>) und vereinfacht im Zusammenspiel mit ML Workspaces - sehr einfaches Aufsetzen von SSH Verbindungen - das Setup der Infrastruktur. Lazycluster kümmert sich also um den Verbindungsaufbau und gibt diese Verbindungen dann zum Beispiel an DASK weiter. Da ML Workspaces beziehungsweise der ML Hub komfortabel als Container mit einem Befehl gestartet und orchestriert werden können und schon viele ML Libraries vorinstalliert sind, ist ein Setup für das verteilte Computing schnell eingerichtet; entweder auf lokaler Hardware, in der Cloud oder einem Hybrid aus beidem, was zum Beispiel bei der Nutzung von GPUs hilfreich sein kann.</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/lazycluster.png" alt="Lazy Cluster" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/lazycluster.png" alt="Lazy Cluster" /></p>
 
 <h2 id="best-of">Best-of</h2>
 
@@ -180,13 +180,13 @@
 
 <p>Der Fokus unserer Listen liegt auf dem Python Ökosystem, da dieses im Bereich ML mit am relevantesten ist und sich unsere Entwicklungen daher auch auf Python fokussieren. Die Python-Listen sind: <a href="https://github.com/ml-tooling/best-of-ml-python">best-of-ml-python</a> (ca. 4100 Sterne), <a href="https://github.com/ml-tooling/best-of-python">best-of-python</a> (ca. 1400 Sterne), <a href="https://github.com/ml-tooling/best-of-web-python">best-of-web-python</a> (ca. 1000 Sterne), <a href="https://github.com/ml-tooling/best-of-python-dev">best-of-python-dev</a> (ca. 180 Sterne) und <a href="https://github.com/ml-tooling/best-of-jupyter">best-of-jupyter</a> (ca. 140 Sterne).</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/ml.gif" alt="ML" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/ml.gif" alt="ML" /></p>
 
 <p>Basierend auf den Top 5 Libraries aus der Kategorie Model Interpretability aus der <a href="https://github.com/ml-tooling/best-of-ml-python">best-of-ml-python</a> Liste haben wir zusätzlich <a href="https://mltooling.substack.com/p/top-5-model-interpretability-libraries">diesen Blogpost</a> veröffentlicht.</p>
 
 <p>Neben des Überblicks für uns haben wir durch den Rollout auch wertvolle Erkenntnisse darüber gewonnen, wie wir unsere Zielgruppe ansprechen und erreichen können und welche Social Media Plattformen mehr oder weniger gut funktionieren.</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/tweet.png" alt="Tweet" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/tweet.png" alt="Tweet" /></p>
 
 <p><a href="https://twitter.com/mltooling/status/1352027143992188936">Original Tweet</a></p>
 
@@ -196,7 +196,7 @@
 
 <p>In dem Bereich CI/CD Pipelining haben wir uns für <a href="https://github.com/features/actions">GitHub Actions</a> entschieden. Ausschlaggebende Punkte waren die direkte Integration mit GitHub, dass es kostenlos für Open-Source Projekte ist und es für private Projekte monatlich ein sehr großzügiges Kontingent an Freiminuten gibt. Weiterhin können die Pipelines mit dem tollen Open-source Projekt <a href="https://github.com/nektos/act">nektos/act</a> lokal getestet werden.</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/gh-actions.png" alt="gh actions" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/gh-actions.png" alt="gh actions" /></p>
 
 <p><a href="https://github.com/ml-tooling/universal-build/actions">GitHub Actions UI</a></p>
 
@@ -204,13 +204,13 @@
 
 <p>Ein weiterer Schritt für ein einheitliches Buildsystem war die Erstellung der <a href="https://github.com/ml-tooling/universal-build">universal-build</a> Library.</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/universal-build.png" alt="Universal Build" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/universal-build.png" alt="Universal Build" /></p>
 
 <p>In diese haben wir verschiedene Hilfsfunktionen ausgelagert, die wir für jede unserer Komponenten benötigen: Vom Behandeln verschiedener Command- Line Flags bis zum Bauen, Taggen und Pushen der verschiedenen Buildartefakte wie zum Beispiel der Docker Images. Weiterhin beinhaltet das universal-build Repository unter anderem unseren <a href="https://github.com/ml-tooling/universal-build/tree/main/build-environment">Standardbuildcontainer</a> für unsere GitHub Actions Pipelines, oder auch von uns erstellte <a href="https://github.com/ml-tooling/universal-build/tree/main/examples">Templates</a> für Python oder Webprojekte, sodass zukünftige Komponenten effizient auf einer sauberen Basis erstellt werden können!</p>
 
 <p>Mit <a href="https://github.com/ml-tooling/lazydocs">lazydocs</a> haben wir noch eine Library veröffentlicht, mit welcher einfach übersichtliche, markdownbasierte Dokumentationen für Python APIs erstellt werden können!</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/lazydocs.png" alt="lazydocs" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/lazydocs.png" alt="lazydocs" /></p>
 
 <p>Mit lazydocs generieren wir mittlerweile alle API Dokumentationen unserer Python Libraries bzw. Komponenten.</p>
 
@@ -222,7 +222,7 @@
 
 <p>Für Interessierte hier noch ein kurzer Überblick, wie wir während des Projektes vorgegangen sind und wie wir uns allgemein organisiert haben - vor allem, da physische Treffen durch Corona nicht wirklich möglich waren. Für einen Monat hatten wir einen <a href="https://onecoworking.com/">OneCoworking Pass</a> um in Berlin verschiedene CoWorking- Spaces auszuprobieren, was wir dann aufgrund des zweiten Corona-Lockdowns aufgehört haben. Zum Glück haben wir von Anfang an Wert auf Async-first und Remote-first gelegt und versucht, einen dokumentationsbasierten Ansatz zu leben (unter anderem inspiriert von <a href="https://medium.com/swlh/the-silent-meeting-manifesto-v1-189e9e3487eb">Amazons berühmten Silent Meeting</a>): Wir haben Notizen und Gedanken immer schriftlich festgehalten (wir benutzen <a href="https://www.notion.so/">Notion</a> dafür) und basierend auf den niedergeschriebenen Notizen erste wichtige Entscheidungen getroffen. Daraufhin haben wir die Ergebnisse der Entscheidung beziehungsweise das Konzept sauber und strukturiert ausformuliert und dort dann kommentiert, diskutiert und letztlich kollaborativ feingeschliffen.</p>
 
-<p><img src="/assets/images/project_images/ml-tooling/tooling.png" alt="tooling" /></p>
+<p><img src="/runde8/assets/images/project_images/ml-tooling/tooling.png" alt="tooling" /></p>
 
 <p>Unsere Tools</p>
 
