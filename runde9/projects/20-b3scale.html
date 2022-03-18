@@ -128,7 +128,7 @@
 
 <p>Um die Anforderung der Ausfallsicherheit zu gewährleisten, war es notwendig, den Zustand in eine Datenbank auszulagern und nicht in der Anwendung selbst zu halten. Dies umfasste sowohl die Routing-Tabelle als auch die Konfiguration von BigBlueButton-Backend-Instanzen und Frontends. Die relationale Datenbank PostgreSQL wurde hier ausgewählt, weil diese bereits lange Zeit produktiv in vielen Projekten im Einsatz ist und ebenfalls Cluster-fähig ist.</p>
 
-<p><img src="/assets/images/project_images/b3scale/arch1.png" alt="Abb.1 Cluster-Architektur mit BBB-Backends, PostgreSQL-, b3scale-Cluster und Nginx LoadBalancer." /></p>
+<p><img src="/runde9/assets/images/project_images/b3scale/arch1.png" alt="Abb.1 Cluster-Architektur mit BBB-Backends, PostgreSQL-, b3scale-Cluster und Nginx LoadBalancer." /></p>
 
 <h3 id="anfrageverarbeitung">Anfrageverarbeitung</h3>
 
@@ -140,7 +140,7 @@
 
 <p>Die Antwort der Handler-Middleware durchläuft die Kette in umgekehrter Richtung und kann ebenfalls modifiziert werden.</p>
 
-<p><img src="/assets/images/project_images/b3scale/b3scale_middlewares.png" alt="Abb.2 b3scale Applikations-Architektur, Gateway- und Router-Middlewares" /></p>
+<p><img src="/runde9/assets/images/project_images/b3scale/b3scale_middlewares.png" alt="Abb.2 b3scale Applikations-Architektur, Gateway- und Router-Middlewares" /></p>
 
 <p>Muss zur Beantwortung einer Anfrage auf ein BigBlueButton-Backend zugegriffen werden, so muss dies zunächst durch den Router ausgewählt werden. Die Anfrage wird dabei, analog zum Gateway, durch eine Middleware-Kette geleitet und BigBlueButton-Backends anhand von Kriterien selektiert oder verworfen. Hier wird ebenfalls die Sortierung der Backends nach Last und die Partitionierung des Clusters mittels Tags durchgeführt.</p>
 
@@ -189,9 +189,9 @@ verarbeitet werden.</p>
 
 <p>Zu den exportierten Daten gehören sowohl Kennzahlen über die Applikationsinstanz selbst - wie Speicherverbrauch oder Threads - als auch die Anzahl von Meetings und Teilnehmenden im Cluster.</p>
 
-<p><img src="/assets/images/project_images/b3scale/grafana1.png" alt="Abb.3 Grafana Visualisierung der Meeting-Kennzahlen" /></p>
+<p><img src="/runde9/assets/images/project_images/b3scale/grafana1.png" alt="Abb.3 Grafana Visualisierung der Meeting-Kennzahlen" /></p>
 
-<p><img src="/assets/images/project_images/b3scale/grafana2.png" alt="Abb.3 Grafana Visualisierung der Meeting-Kennzahlen" /></p>
+<p><img src="/runde9/assets/images/project_images/b3scale/grafana2.png" alt="Abb.3 Grafana Visualisierung der Meeting-Kennzahlen" /></p>
 
 <h2 id="ausblick">Ausblick</h2>
 
