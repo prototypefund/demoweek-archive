@@ -118,7 +118,7 @@
   <div class="project-body">
     <h1 id="klinik-db-die-freie-krankenhausdatenbank">KLINIK-DB: Die freie Krankenhausdatenbank</h1>
 
-<p><img src="/assets/images/project_images/klinikdb/datenbankschema.png" alt="Klinik-DB Datenbankschema" title="Klinik-DB Datenbankschema" />
+<p><img src="/runde9/assets/images/project_images/klinikdb/datenbankschema.png" alt="Klinik-DB Datenbankschema" title="Klinik-DB Datenbankschema" />
 Abbildung 1: Klinik-DB Datenbankschema</p>
 
 <h2 id="die-ausgangslage-eine-nicht-hinnehmbare-datenlage-über-die-deutsche-kliniklandschaft">Die Ausgangslage: eine nicht hinnehmbare Datenlage über die deutsche Kliniklandschaft</h2>
@@ -139,7 +139,7 @@ Wie schwierig es sein kann, an vermeintlich frei verfügbare Daten über deutsch
 <p>Der erste Schritt in unserem Projekt war die <em>Befreiung der Daten aus den GBA-XML-Dateien</em> durch automatisches Einlesen und Parsen in ein einheitliches Format sowie die Abbildung dieser Daten in einer SQL-Datenbank. Dieser Vorgang wurde für die letzten fünf Jahre vollzogen.
 Hierbei ist u. a. auch die örtliche Position (d. h. die in den Rohdaten nicht enthaltenen Koordinaten) jedes Krankenhauses in die Datenbank integriert worden, um räumliche Analysen zu ermöglichen. Die Informationen wurden so miteinander verknüpft, dass die Kliniken über die Jahre verfolg- und vergleichbar sind. Hiermit wird der Aufwand für die Nutzer*innen enorm reduziert, da ein überjähriger Vergleich anhand der GBA-Rohdaten bisher nicht möglich ist (es gibt z. B. keinen verlässlichen übergreifenden ID-Code über die Jahre hinweg) oder intensive Handarbeit erfordert. Da wir den Programmcode für unseren XML-Parser unter einer Open-Source-Lizenz verfügbar machen (R-Package <a href="https://klinik-db.gitlab.io/qbgbaReader/">„qbgbaReader“</a>), kann das Einlesen der Daten aus den XML-Dateien in eine Datenbank von allen, die den Code nutzen, reproduziert werden, solange die GBA-Rohdaten verfügbar sind.</p>
 
-<p><img src="/assets/images/project_images/klinikdb/documentation.png" alt="Das XML-Parsing R-Package „qbgbaReader“" title="Das XML-Parsing R-Package „qbgbaReader“" />
+<p><img src="/runde9/assets/images/project_images/klinikdb/documentation.png" alt="Das XML-Parsing R-Package „qbgbaReader“" title="Das XML-Parsing R-Package „qbgbaReader“" />
 Abbildung 2: Das XML-Parsing R-Package „qbgbaReader“</p>
 
 <p>Um die Nutzbarkeit und den Informationsgehalt von Klinik-DB weiter zu steigern, wurden die GBA-Daten mit weiteren Drittdaten “angereichert”, die sich für weitere Analysen einfach als <a href="https://klinik-db.gitlab.io/qbgbaExtraData/">R-Package</a> installieren lassen.
