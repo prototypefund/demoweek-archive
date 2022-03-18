@@ -166,27 +166,27 @@ Ich hatte ein einfaches Abstraktions- und Abhängigkeitslevel zwischen einem “
 
 <p>Durch mehrere Gespräche mit dem Team über die Problemlage der Datenstruktur ergab sich auch immer mehr, dass ohnehin mehr Flexibilität in der Organisation der Datenstruktur gebraucht wird als ich zuerst angenommen hatte. Es gibt immer wieder Diskussionen und Anpassungen in den Tabellen und das Team soll in der Lage sein, die Struktur ähnlich einfach, wie in einer Tabelle, anpassen zu können. Deshalb verwarf ich die erste Version des Datenbankdesigns und überlegte mir ein neues abstrakteres und flexibleres Design.</p>
 
-<p><img src="/assets/images/project_images/feminizidmap/db-sketch.png" alt="Datenbankdesign version 2 auf Papier" />
+<p><img src="/runde9/assets/images/project_images/feminizidmap/db-sketch.png" alt="Datenbankdesign version 2 auf Papier" />
 <em>Alles neu: Den groben Plan der zweiten Datenbank habe ich erstmal komplett auf Papier skizziert</em></p>
 
 <p>In dieser Version kann die Datenstruktur direkt im Administrations-Interface beliebig zusammengesetzt werden. Zwar kostete mich das Planen und Umsetzen dieses Interfaces relativ viel Zeit, aber das Ergebnis gibt Mapper das Potential, auch in anderen Kontexten genutzt zu werden, weil es nun der Art der gesammelten Daten gegenüber agnostisch ist.</p>
 
-<p><img src="/assets/images/project_images/feminizidmap/datenstrukturen.gif" alt="Datenstrukturen" />
+<p><img src="/runde9/assets/images/project_images/feminizidmap/datenstrukturen.gif" alt="Datenstrukturen" />
 <em>Flexible Datenstrukturen: Hier kann die Zusammensetzung eines einzelnen Datums festgelegt werden. Informationsebenen und Benennung sind frei wählbar</em></p>
 
-<p><img src="/assets/images/project_images/feminizidmap/kategorien-elemente.gif" alt="Kategorien und Elemente" />
+<p><img src="/runde9/assets/images/project_images/feminizidmap/kategorien-elemente.gif" alt="Kategorien und Elemente" />
 <em>In der Datenstruktur auswählbare Felder (hier Kategorien genannt) und die später in der Dateneingabe auswählbaren Optionen (hier Elemente genannt) sind einfach anpassbar</em></p>
 
 <p>Während der Neuplanung der Datenbank auf Papier konzentrierte ich mich in Sachen Interface auf die Dateneingabe. Hier ist mir eine gute User-Experience extrem wichtig, weil dies der Hauptteil des Tools ist, mit dem alle Teammitglieder in Berührung kommen werden.</p>
 
-<p><img src="/assets/images/project_images/feminizidmap/datenwizard.gif" alt="Eingabewizard" />
+<p><img src="/runde9/assets/images/project_images/feminizidmap/datenwizard.gif" alt="Eingabewizard" />
 <em>Eine frühe Iteration des Eingabe-Wizard mit dem angebundenen Bearbeitungslog</em></p>
 
 <p>Neben Mockups des Eingabe-Wizards beschäftigte ich mich vor allem mit dem automatisierten Speichern und dem Erstellen der Bearbeitungslogs. Bis ich mit der Datenbank und den Möglichkeiten der Neukonfiguration der Datenstruktur fertig war, konnte ich den Wizard noch nicht im Detail ausarbeiten.</p>
 
 <p>Jetzt bin ich an einem Punkt, an dem genug planerische Vorarbeit geleistet und Änderungen umgesetzt wurden um die verschiedenen halbfertigen Teile zusammenzufügen und auf ein erstes brauchbares Deployment hinzuarbeiten. Aber diese Arbeit wird außerhalb der Förderphase stattfinden müssen.</p>
 
-<p><img src="/assets/images/project_images/feminizidmap/zeitbasierter-delete.gif" alt="Zeitbasiertes Löschen Indikator" />
+<p><img src="/runde9/assets/images/project_images/feminizidmap/zeitbasierter-delete.gif" alt="Zeitbasiertes Löschen Indikator" />
 <em>Bessere UX: Anstatt einer “Bist du sicher?” Abfrage oder eines kleinen Banners mit “Rückgängig machen”, habe ich mich beim Löschen von wichtigen Daten für einen zeitbasierten, in-Ort Indikator mit Abbruchfunktion entschieden</em></p>
 
 <p>Neben der Arbeit an Mapper entstand auch das Tool <a href="https://github.com/feminizidmap/briefkasten">Briefkasten</a>, das das (falls gewünscht, anonyme) Melden von Femi(ni)ziden aus der Zivilgesellschaft direkt an das Projekt erleichtern soll.</p>
