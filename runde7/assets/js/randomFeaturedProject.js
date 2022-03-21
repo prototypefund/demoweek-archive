@@ -10,7 +10,7 @@ function renderProject(project) {
     project.summary || "";
   featuredContainer.querySelector(".project-btn").href = project.url;
   featuredContainer.querySelector(".project-image img").src =
-    project.image || "/runde7/assets/images/project_img_placeholder.png";
+    project.image || "/assets/images/project_img_placeholder.png";
 
   var authorHTML = "";
   project.authors.forEach((author, index) => {
