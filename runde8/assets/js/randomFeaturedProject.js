@@ -8,7 +8,7 @@ function renderProject(project) {
   featuredContainer.querySelector(".project-brief").innerText = project.brief;
   featuredContainer.querySelector(".project-description").innerText = project.summary || "";
   featuredContainer.querySelector(".project-btn").href = project.url;
-  featuredContainer.querySelector(".project-image img").src = project.image || "/assets/images/project_img_placeholder.png";
+  featuredContainer.querySelector(".project-image img").src = project.image || "/runde8/assets/images/project_img_placeholder.png";
 
   var authorHTML = "";
   project.authors.forEach((author, index) => {
